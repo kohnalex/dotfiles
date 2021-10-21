@@ -1,0 +1,1288 @@
+# Diese viminfo-Datei wurde von Vim 8.2 generiert.
+# Sie können sie verändern, wenn Sie vorsichtig vorgehen!
+
+# Viminfo version
+|1,4
+
+# Wert von 'encoding', als diese Datei geschrieben wurde
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Letztes Suchmuster:
+~Msle0~/\<cout\>
+
+# Letztes ErsetzeSuchmuster:
+~MSle0&inputs
+
+# Letzte ersetzte Zeichenkette:
+$
+
+# Befehlszeile Geschichte (neueste bis älteste):
+:wq
+|2,0,1634829939,,"wq"
+:q
+|2,0,1634822767,,"q"
+:W
+|2,0,1634822766,,"W"
+:w
+|2,0,1634822556,,"w"
+:undo
+|2,0,1634821362,,"undo"
+:q!
+|2,0,1634820119,,"q!"
+:Q
+|2,0,1634570777,,"Q"
+:noh
+|2,0,1634570451,,"noh"
+:help shiftwidth
+|2,0,1634570115,,"help shiftwidth"
+:qw
+|2,0,1634569396,,"qw"
+:2
+|2,0,1629923628,,"2"
+:/\<i.*[^-]$
+|2,0,1626198183,,"/\\<i.*[^-]$"
+:\<i.*[^-]$
+|2,0,1626198176,,"\\<i.*[^-]$"
+:'<,'>q
+|2,0,1620308277,,"'<,'>q"
+:s/inputs/input_list/g
+|2,0,1619884383,,"s/inputs/input_list/g"
+:q+
+|2,0,1619798047,,"q+"
+:term
+|2,0,1619707463,,"term"
+:vs main.cc
+|2,0,1619707111,,"vs main.cc"
+:res +10
+|2,0,1619640187,,"res +10"
+:res -10
+|2,0,1619640183,,"res -10"
+:vs
+|2,0,1619640179,,"vs"
+:vs RootStoreOptions.ts
+|2,0,1619640049,,"vs RootStoreOptions.ts"
+:vs RootState.ts
+|2,0,1619640027,,"vs RootState.ts"
+:vsp
+|2,0,1619639896,,"vsp"
+:10sp terminal
+|2,0,1619639820,,"10sp terminal"
+:vs RootActionTree.ts
+|2,0,1619639679,,"vs RootActionTree.ts"
+:vs RootGetterTree.ts
+|2,0,1619639559,,"vs RootGetterTree.ts"
+:vs RootMutationTree.ts
+|2,0,1619639487,,"vs RootMutationTree.ts"
+:vfs
+|2,0,1619639241,,"vfs"
+:sp
+|2,0,1619639223,,"sp"
+:vsplit
+|2,0,1619639208,,"vsplit"
+:split
+|2,0,1619639205,,"split"
+:tabedit .zshrc
+|2,0,1619613338,,"tabedit .zshrc"
+:Qqq
+|2,0,1619549023,,"Qqq"
+:Qq
+|2,0,1619548721,,"Qq"
+:prof start 
+|2,0,1619548246,,"prof start "
+:help :profile
+|2,0,1619548231,,"help :profile"
+:help scrolling
+|2,0,1619547893,,"help scrolling"
+:profile start profile.log
+|2,0,1619548191,,"profile start profile.log"
+:PlugInstall
+|2,0,1619546784,,"PlugInstall"
+://<is/>
+|2,0,1618843326,,"//<is/>"
+:/\v\*
+|2,0,1618843257,,"/\\v\\*"
+:/\v*
+|2,0,1618843248,,"/\\v*"
+:/\v\w+@
+|2,0,1618843222,,"/\\v\\w+@"
+:/v<[A-Za-z0-9]+@>
+|2,0,1618843200,,"/v<[A-Za-z0-9]+@>"
+:/<[A-Za-z0-9]+@>
+|2,0,1618843121,,"/<[A-Za-z0-9]+@>"
+:/[A-Za-z0-9]+@
+|2,0,1618843112,,"/[A-Za-z0-9]+@"
+:/@
+|2,0,1618842421,,"/@"
+:/
+|2,0,1618842199,,"/"
+:/\v<\u(\u|\d)+>
+|2,0,1618842064,,"/\\v<\\u(\\u|\\d)+>"
+
+# Suchausdruck Geschichte (neueste bis älteste):
+? \<cout\>
+|2,1,1634570401,,"\\<cout\\>"
+?/c++
+|2,1,1633679944,47,"c++"
+?/DB
+|2,1,1633462410,47,"DB"
+?/db
+|2,1,1633462405,47,"db"
+?/ff
+|2,1,1630957501,47,"ff"
+?/Earth
+|2,1,1630438682,47,"Earth"
+?/PATH
+|2,1,1630001970,47,"PATH"
+?/export 
+|2,1,1630001680,47,"export "
+? @$
+|2,1,1629835272,,"@$"
+?/build
+|2,1,1629396460,47,"build"
+?/export
+|2,1,1626453176,47,"export"
+?/\<[A-Za-z0-9]+@\>
+|2,1,1626198618,47,"\\<[A-Za-z0-9]+@\\>"
+? \<i.*[^-]$
+|2,1,1626198183,,"\\<i.*[^-]$"
+?/\<i.*[^-]$
+|2,1,1626198127,47,"\\<i.*[^-]$"
+?/lgmp
+|2,1,1621422970,47,"lgmp"
+? inputs
+|2,1,1619884383,,"inputs"
+?/authenticated
+|2,1,1619883283,47,"authenticated"
+?/gmp
+|2,1,1619778709,47,"gmp"
+? \v\*
+|2,1,1618843257,,"\\v\\*"
+? \v*
+|2,1,1618843248,,"\\v*"
+?/\v<\w+@>
+|2,1,1618843228,47,"\\v<\\w+@>"
+? \v\w+@
+|2,1,1618843222,,"\\v\\w+@"
+? v<[A-Za-z0-9]+@>
+|2,1,1618843200,,"v<[A-Za-z0-9]+@>"
+?/\v<[A-Za-z0-9]+@>
+|2,1,1618843193,47,"\\v<[A-Za-z0-9]+@>"
+? <[A-Za-z0-9]+@>
+|2,1,1618843121,,"<[A-Za-z0-9]+@>"
+?/\v<\w+(\.\w)*@>
+|2,1,1618843101,47,"\\v<\\w+(\\.\\w)*@>"
+?/\v<\w+(.\w)*@>
+|2,1,1618843086,47,"\\v<\\w+(.\\w)*@>"
+?//<[A-Za-z0-9]/>
+|2,1,1618842991,47,"/<[A-Za-z0-9]/>"
+?/<[A-Za-z0-9]>
+|2,1,1618842964,47,"<[A-Za-z0-9]>"
+?/<[A-Za-z0-9]+@>
+|2,1,1618842958,47,"<[A-Za-z0-9]+@>"
+? [A-Za-z0-9]+@
+|2,1,1618842943,,"[A-Za-z0-9]+@"
+? @
+|2,1,1618842421,,"@"
+? \v<\u(\u|\d)+>
+|2,1,1618842064,,"\\v<\\u(\\u|\\d)+>"
+?/\v<
+|2,1,1618842024,47,"\\v<"
+? \v<[A-Z][0-9A-Z]+>
+|2,1,1618841755,,"\\v<[A-Z][0-9A-Z]+>"
+?/and
+|2,1,1618841200,47,"and"
+? \<w3\>
+|2,1,1618841058,,"\\<w3\\>"
+?/@
+|2,1,1618841051,47,"@"
+? \<1\>
+|2,1,1618841043,,"\\<1\\>"
+? "\/"
+|2,1,1618841041,,"\"\\/\""
+? noh
+|2,1,1618840953,,"noh"
+?/The Hypertext
+|2,1,1618840946,47,"The Hypertext"
+? hasQ
+|2,1,1618839751,,"hasQ"
+? \<import\>
+|2,1,1618573596,,"\\<import\\>"
+?/\.ts
+|2,1,1618429579,47,"\\.ts"
+?/Article
+|2,1,1618394024,47,"Article"
+? has
+|2,1,1618393957,,"has"
+? Articel
+|2,1,1618393952,,"Articel"
+
+# Ausdruck Geschichte (neueste bis älteste):
+
+# Eingabe-Zeile Geschichte (neueste bis älteste):
+
+# Debug-Zeile Geschichte (neueste bis älteste):
+
+# Register:
+"0	LINE	0
+	bool two() {
+		return 2;
+	}
+|3,0,0,1,3,0,1634821342,"bool two() {","	return 2;","}"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1634822458,""
+"2	LINE	0
+	export SOME_VAR="222"
+|3,0,2,1,1,0,1634822458,"export SOME_VAR=\"222\""
+"3	LINE	0
+	
+|3,0,3,1,1,0,1634821346,""
+"4	LINE	0
+	bool two() {
+		return 2;
+	}
+|3,0,4,1,3,0,1634821344,"bool two() {","	return 2;","}"
+"5	LINE	0
+	
+	
+	### DONE 
+	tmux
+|3,0,5,1,4,0,1634820197,"","","### DONE ","tmux"
+"6	LINE	0
+	 "test"
+|3,0,6,1,1,0,1634818424," \"test\""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1634570572,""
+"8	LINE	0
+		cout << size << endl;
+|3,0,8,1,1,0,1634570558,"	cout << size << endl;"
+"9	LINE	0
+		cout << CHAR_BIT << endl;
+|3,0,9,1,1,0,1634570435,"	cout << CHAR_BIT << endl;"
+"a	CHAR	0
+	
+|3,0,10,0,1,0,1619192439,""
+"q	CHAR	0
+	!q
+|3,0,26,0,1,0,1626259081,"!q"
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1634822127," "
+
+# Datei-Markierungen:
+'0  124  12  ~/.zshrc
+|4,48,124,12,1634829939,"~/.zshrc"
+'1  2  0  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,49,2,0,1634824222,"~/.dotfiles/.git/COMMIT_EDITMSG"
+'2  1  0  ~/.zshrc
+|4,50,1,0,1634822767,"~/.zshrc"
+'3  1  0  ~/.zshrc
+|4,51,1,0,1634822767,"~/.zshrc"
+'4  25  1  ~/.zshrc
+|4,52,25,1,1634822717,"~/.zshrc"
+'5  25  1  ~/.zshrc
+|4,53,25,1,1634822717,"~/.zshrc"
+'6  25  1  ~/.zshrc
+|4,54,25,1,1634822717,"~/.zshrc"
+'7  25  1  ~/.zshrc
+|4,55,25,1,1634822717,"~/.zshrc"
+'8  2  0  ~/.tmux.conf
+|4,56,2,0,1634822558,"~/.tmux.conf"
+'9  8  0  ~/.zprofile
+|4,57,8,0,1634822543,"~/.zprofile"
+
+# Jumplist (neueste zuerst):
+-'  124  12  ~/.zshrc
+|4,39,124,12,1634829939,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1634829929,"~/.zshrc"
+-'  2  0  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,2,0,1634824222,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  2  0  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,2,0,1634824222,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1634824215,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.dotfiles/.git/COMMIT_EDITMSG
+|4,39,1,0,1634824215,"~/.dotfiles/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1634822767,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1634822767,"~/.zshrc"
+-'  25  1  ~/.zshrc
+|4,39,25,1,1634822717,"~/.zshrc"
+-'  25  1  ~/.zshrc
+|4,39,25,1,1634822717,"~/.zshrc"
+-'  25  1  ~/.zshrc
+|4,39,25,1,1634822717,"~/.zshrc"
+-'  25  1  ~/.zshrc
+|4,39,25,1,1634822717,"~/.zshrc"
+-'  25  1  ~/.zshrc
+|4,39,25,1,1634822717,"~/.zshrc"
+-'  120  0  ~/.zshrc
+|4,39,120,0,1634822600,"~/.zshrc"
+-'  120  0  ~/.zshrc
+|4,39,120,0,1634822600,"~/.zshrc"
+-'  120  0  ~/.zshrc
+|4,39,120,0,1634822600,"~/.zshrc"
+-'  120  0  ~/.zshrc
+|4,39,120,0,1634822600,"~/.zshrc"
+-'  120  0  ~/.zshrc
+|4,39,120,0,1634822600,"~/.zshrc"
+-'  72  0  ~/.zshrc
+|4,39,72,0,1634822597,"~/.zshrc"
+-'  72  0  ~/.zshrc
+|4,39,72,0,1634822597,"~/.zshrc"
+-'  72  0  ~/.zshrc
+|4,39,72,0,1634822597,"~/.zshrc"
+-'  72  0  ~/.zshrc
+|4,39,72,0,1634822597,"~/.zshrc"
+-'  72  0  ~/.zshrc
+|4,39,72,0,1634822597,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1634822589,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1634822589,"~/.zshrc"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  2  0  ~/.tmux.conf
+|4,39,2,0,1634822558,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  1  0  ~/.tmux.conf
+|4,39,1,0,1634822544,"~/.tmux.conf"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  8  0  ~/.zprofile
+|4,39,8,0,1634822543,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+-'  1  0  ~/.zprofile
+|4,39,1,0,1634822071,"~/.zprofile"
+
+# Geschichte der Markierungen innerhalb von Dateien (neueste zuerst):
+
+> ~/.zshrc
+	*	1634829938	0
+	"	124	12
+	^	124	13
+	.	124	12
+	+	117	0
+	+	111	0
+	+	123	18
+	+	134	81
+	+	121	29
+	+	117	21
+	+	117	1
+	+	117	10
+	+	117	19
+	+	117	0
+	+	117	12
+	+	139	0
+	+	117	0
+	+	122	24
+	+	116	0
+	+	110	13
+	+	111	1
+	+	115	10
+	+	110	18
+	+	111	0
+	+	110	1
+	+	111	0
+	+	115	4
+	+	137	18
+	+	139	14
+	+	123	0
+	+	139	2
+	+	152	0
+	+	139	0
+	+	102	14
+	+	102	17
+	+	147	1
+	+	121	0
+	+	145	10
+	+	118	20
+	+	145	151
+	+	120	19
+	+	152	0
+	+	120	22
+	+	102	0
+	+	152	0
+	+	145	122
+	+	145	15
+	+	145	20
+	+	145	105
+	+	145	15
+	+	145	125
+	+	120	20
+	+	152	0
+	+	142	4
+	+	145	15
+	+	147	0
+	+	146	4
+	+	120	0
+	+	118	7
+	+	138	27
+	+	144	18
+	+	138	31
+	+	144	22
+	+	138	4
+	+	115	0
+	+	111	0
+	+	118	7
+	+	145	7
+	+	144	41
+	+	152	0
+	+	146	12
+	+	149	15
+	+	150	0
+	+	150	4
+	+	148	34
+	+	119	11
+	+	118	25
+	+	119	21
+	+	145	15
+	+	116	0
+	+	152	17
+	+	152	8
+	+	116	0
+	+	152	0
+	+	134	1
+	+	135	21
+	+	125	0
+	+	128	35
+	+	130	1
+	+	131	30
+	+	122	0
+	+	114	16
+	+	113	16
+	+	112	15
+	+	111	16
+	+	107	1
+	+	106	0
+	+	108	0
+	+	109	0
+	+	108	48
+	+	127	88
+	+	1	81
+	+	155	0
+	+	124	12
+	n	43	0
+
+> ~/.dotfiles/.git/COMMIT_EDITMSG
+	*	1634824222	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	2	0
+
+> ~/.tmux.conf
+	*	1634822556	0
+	"	2	0
+	^	2	0
+	.	1	41
+	+	1	41
+
+> ~/.zprofile
+	*	1634822463	0
+	"	8	0
+	^	5	2
+	.	9	0
+	+	5	35
+	+	1	51
+	+	4	22
+	+	8	34
+	+	9	0
+	+	9	19
+	+	5	0
+	+	9	0
+
+> ~/Documents/Code/cpp/ue1/a1/main.cpp
+	*	1634821915	0
+	"	9	0
+	^	7	13
+	.	7	12
+	+	5	33
+	+	9	9
+	+	5	33
+	+	5	34
+	+	9	0
+	+	5	33
+	+	8	24
+	+	1	1
+	+	3	0
+	+	1	8
+	+	8	8
+	+	8	13
+	+	6	24
+	+	9	0
+	+	8	22
+	+	8	9
+	+	8	0
+	+	8	17
+	+	8	3
+	+	2	17
+	+	6	34
+	+	8	0
+	+	8	22
+	+	8	0
+	+	6	36
+	+	7	21
+	+	6	21
+	+	5	12
+	+	5	9
+	+	7	20
+	+	5	0
+	+	7	12
+
+> ~/Desktop/javascript.js
+	*	1634761150	0
+	"	1	23
+	^	1	24
+	.	1	24
+	+	1	24
+
+> ~/Desktop/js.js
+	*	1634761010	0
+	"	1	25
+	^	1	26
+	.	1	26
+	+	1	26
+
+> /private/etc/shells
+	*	1634750959	0
+	"	12	21
+	^	12	22
+	.	12	21
+	+	12	21
+
+> ~/Documents/Code/docker-geoserver/.git/COMMIT_EDITMSG
+	*	1634575006	0
+	"	1	14
+	^	1	15
+	.	1	15
+	+	1	15
+
+> ~/Documents/Code/docker-geoserver/.env
+	*	1634574976	0
+	"	1	0
+
+> ~/Documents/Code/docker-geoserver/docker-compose.yml
+	*	1634574966	0
+	"	1	0
+
+> ~/Documents/Code/sushibar/sushibar.html
+	*	1634570806	0
+	"	22	0
+
+> ~/Documents/Code/sushibar/js.js
+	*	1634570777	0
+	"	53	0
+
+> ~/Documents/Code/cpp/ue1/a1/main
+	*	1634570212	0
+	"	1	0
+
+> ~/.vimrc
+	*	1634570205	0
+	"	15	55
+	^	15	56
+	.	15	56
+	+	14	12
+	+	3	12
+	+	1	54
+	+	5	23
+	+	8	20
+	+	12	20
+	+	10	9
+	+	6	6
+	+	3	13
+	+	21	0
+	+	21	33
+	+	26	14
+	+	20	19
+	+	27	0
+	+	17	12
+	+	20	38
+	+	18	29
+	+	28	0
+	+	17	34
+	+	17	95
+	+	17	19
+	+	21	1
+	+	23	1
+	+	24	1
+	+	26	1
+	+	21	0
+	+	23	0
+	+	24	0
+	+	26	0
+	+	21	33
+	+	24	37
+	+	17	0
+	+	1	0
+	+	21	0
+	+	15	15
+	+	15	56
+
+> /opt/homebrew/Cellar/vim/8.2.3450/share/vim/vim82/doc/eval.txt
+	*	1634570119	0
+	"	10157	25
+
+> ~/Documents/Code/docker-geoserver/docker-compose
+	*	1633462419	0
+	"	1	0
+
+> ~/Documents/Code/accel/accel-website/node_modules/@heroicons/vue/outline/PhoneIcon.js
+	*	1631277881	0
+	"	17	0
+
+> ~/Documents/Code/accel/accel-strapi/.git/COMMIT_EDITMSG
+	*	1630604609	0
+	"	1	34
+	^	1	35
+	.	1	35
+	+	1	35
+
+> ~/Documents/Code/accel/accel-website/.git/COMMIT_EDITMSG
+	*	1630515395	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	2	0
+
+> ~/Documents/Arbeit/Accel/MinEarth/codecanyon-x5Pp6uWF-miniature-earth-interactive-3d-globe-for-javascript/src/Miniature.Earth.js
+	*	1630438705	0
+	"	432	18
+
+> ~/Documents/Code/accel/accel-website/components/Globe.vue
+	*	1630249332	0
+	"	13	0
+	^	28	23
+	.	28	22
+	+	26	16
+	+	20	25
+	+	28	22
+
+> ~/Documents/Uni/mod-web-dev/cookbook-by-pgugg/cookbook/cookbookfrontend/src/App.js
+	*	1630002474	0
+	"	74	0
+
+> ~/Documents/Uni/mod-web-dev/cookbook-by-pgugg/cookbook/cookbookfrontend/src/App.
+	*	1630002432	0
+	"	1	0
+
+> ~/Documents/Arbeit/Accel/MinEarth/serve.py
+	*	1630000833	0
+	"	1	0
+	^	11	21
+	.	11	20
+	+	11	20
+
+> ~/Documents/Arbeit/Accel/MinEarth/python-server.txt
+	*	1630000820	0
+	"	1	0
+
+> ~/Documents/Code/accel/accel-website/components/Fl
+	*	1629902550	0
+	"	1	0
+
+> ~/Library/Application Support/Code/User/settings.json
+	*	1629902514	0
+	"	5	0
+	^	3	2
+	.	3	2
+	+	4	0
+	+	3	2
+
+> ~/Documents/Code/accel/accel-website/components/layout/header/Header.vue
+	*	1629835668	0
+	"	1	9
+	^	2	30
+	.	2	30
+	+	2	22
+	+	2	30
+
+> ~/Documents/Code/scratch/source/index.html
+	*	1629732065	0
+	"	10	0
+	^	10	22
+	.	10	21
+	+	13	6
+	+	8	7
+	+	10	21
+
+> ~/Documents/Code/accel/accel-website/tailwind.config.js
+	*	1629658809	0
+	"	1	0
+
+> ~/Documents/Code/accel/accel-strapi/app.yaml
+	*	1629658786	0
+	"	11	2
+
+> ~/Documents/Code/accel/accel-strapi/.gitignore
+	*	1629396460	0
+	"	1	0
+	^	123	17
+	.	123	16
+	+	116	0
+	+	118	0
+	+	119	15
+	+	123	16
+	+	122	16
+	+	123	16
+
+> ~/Documents/Code/accel/accel-strapi/package.json
+	*	1629395634	0
+	"	1	0
+
+> ~/Documents/Code/accel/accel-strapi/.strapi-updater.json
+	*	1629220425	0
+	"	1	0
+
+> ~/Documents/Code/accel/accel-strapi/.git/config
+	*	1629140555	0
+	"	15	52
+	^	15	53
+	.	15	52
+	+	15	52
+
+> ~/Desktop/index.html
+	*	1628092062	0
+	"	1	151
+	^	1	152
+	.	1	151
+	+	1	151
+
+> ~/Documents/Code/accel/accel-strapi/.env
+	*	1626618710	0
+	"	4	15
+	^	10	19
+	.	10	18
+	+	10	18
+
+> ~/Documents/Code/accel/accel-strapi/docker-compose.yml
+	*	1626467271	0
+	"	31	0
+
+> ~/Documents/Code/facekoob/facekoob-laravel/docker-compose.yml
+	*	1626443348	0
+	"	20	4
+
+> ~/Documents/Code/nuxt-playground/.git/COMMIT_EDITMSG
+	*	1625785964	0
+	"	1	15
+	^	1	16
+	.	1	15
+	+	1	15
+
+> ~/Documents/Code/my-project/.git/COMMIT_EDITMSG
+	*	1625783941	0
+	"	1	15
+	^	1	16
+	.	1	16
+	+	1	16
+
+> ~/Documents/Code/tailwind-test/.git/COMMIT_EDITMSG
+	*	1625783307	0
+	"	2	0
+	^	2	0
+	.	1	13
+	+	1	13
+
+> ~/Documents/Code/facekoob/facekoob-laravel/routes/api.php
+	*	1624970248	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/facekoob-vue/src/components/account/AccountEditResetPasswordForm.vue
+	*	1624906454	0
+	"	9	52
+	^	9	53
+	.	9	52
+	+	9	52
+
+> ~/Documents/Code/facekoob/facekoob-laravel/config/cors.php
+	*	1624905830	0
+	"	39	0
+
+> ~/Documents/Code/facekoob/facekoob-vue/src/http-common.ts
+	*	1624905758	0
+	"	4	2
+	^	4	30
+	.	4	29
+	+	4	29
+
+> ~/Documents/Code/facekoob/facekoob-vue/.git/COMMIT_EDITMSG
+	*	1624737208	0
+	"	1	33
+	^	1	34
+	.	1	34
+	+	1	34
+
+> ~/Desktop/Abgabe/facekoob-laravel/docker-compose.yml
+	*	1624659919	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/laravel/.gitignore
+	*	1624657668	0
+	"	13	0
+
+> ~/Desktop/Abgabe/readme.txt
+	*	1624656757	0
+	"	3	0
+	^	3	0
+	.	3	0
+	+	10	12
+	+	8	1
+	+	9	0
+	+	8	0
+	+	9	10
+	+	3	0
+
+> ~/Desktop/ph/cookbook/cookBookBackend/.env
+	*	1624571175	0
+	"	2	0
+
+> ~/Documents/Code/facekoob/laravel/app/Http/Controllers/UserController.php
+	*	1623245858	0
+	"	33	26
+	^	33	27
+	.	33	26
+	+	33	26
+
+> ~/Desktop/tmp
+	*	1623075388	0
+	"	6	0
+	^	6	0
+	.	2	0
+	+	3	17
+	+	5	19
+	+	2	0
+	+	6	0
+	+	5	1
+	+	3	0
+	+	4	0
+	+	5	0
+	+	2	0
+
+> ~/Documents/Code/facekoob/vue/src/store/RootActionTree.ts
+	*	1622750870	0
+	"	183	0
+	.	137	10
+	+	150	0
+	+	137	10
+
+> ~/Documents/Code/jenkins/docker/docker-compose.yml
+	*	1622646865	0
+	"	1	0
+	^	17	32
+	.	17	31
+	+	17	0
+	+	15	21
+	+	17	31
+
+> ~/Documents/Code/facekoob/vue/src/store/RootStoreOptions.ts
+	*	1622223904	0
+	"	5	34
+	.	5	34
+	+	5	34
+	+	4	50
+	+	5	34
+	+	4	50
+	+	5	34
+
+> ~/Documents/Code/facekoob/vue/.prettierrc.js
+	*	1622223085	0
+	"	1	0
+	.	3	0
+	+	4	1
+	+	3	0
+
+> ~/Documents/Code/facekoob/laravel/config/cors.php
+	*	1621973702	0
+	"	44	4
+
+> ~/Documents/Code/facekoob/laravel/docker-compose.yml
+	*	1621455199	0
+	"	56	0
+
+> ~/Documents/Code/numerik/examples-numerik/01-gmp-01-e-berechnung/makefile
+	*	1621422978	0
+	"	20	0
+
+> ~/Documents/Code/numerik/examples-numerik/01-gmp-01-e-berechnung/main.cc
+	*	1621422934	0
+	"	18	2
+	^	18	3
+	.	18	2
+	+	17	0
+	+	19	53
+	+	18	2
+
+> ~/Documents/Code/facekoob/vue/package.json
+	*	1620334782	0
+	"	6	0
+
+> ~/Documents/Code/facekoob/vue/package
+	*	1620334769	0
+	"	1	0
+
+> ~/Documents/Code/jenkins/docker/bash-scripts/hello-bash.sh
+	*	1620312559	0
+	"	4	12
+	^	4	13
+	.	4	12
+	+	6	36
+	+	3	8
+	+	4	12
+
+> ~/Documents/Code/jenkins-test/docker-compose.yml
+	*	1620240032	0
+	"	6	15
+	^	5	25
+	.	6	15
+	+	17	49
+	+	18	19
+	+	15	8
+	+	13	27
+	+	17	0
+	+	16	6
+	+	5	5
+	+	7	29
+	+	6	29
+	+	4	24
+	+	6	15
+
+> ~/Documents/Code/jenkins-udemy/working-dir/jenkins-data/docker-compose.yml
+	*	1620124299	0
+	"	1	0
+	^	6	30
+	.	6	30
+	+	5	27
+	+	8	19
+	+	15	15
+	+	10	41
+	+	13	0
+	+	12	10
+	+	15	0
+	+	15	5
+	+	10	19
+	+	12	12
+	+	11	11
+	+	10	19
+	+	6	30
+
+> ~/Documents/Code/procon/threeIntegersAgain/threeIntegersAgain.cpp
+	*	1619884387	0
+	"	1	0
+
+> ~/Documents/Code/itw-21/backend/docker-compose.yml
+	*	1619883536	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/vue/.git/COMMIT_EDITMSG
+	*	1619883343	0
+	"	1	19
+	^	1	20
+	.	1	19
+	+	1	19
+
+> ~/Documents/Code/facekoob/vue/src/components/auth/LoginForm.vue
+	*	1619883307	0
+	"	80	19
+	^	80	20
+	.	80	19
+	+	69	11
+	+	80	19
+
+> ~/Desktop/text
+	*	1619778722	0
+	"	112	0
+
+> ~/Desktop/test
+	*	1619778699	0
+	"	1	0
+
+> ~/Library/Spelling/LocalDictionary
+	*	1619724909	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/Code/numerik/examples-numerik/.git/COMMIT_EDITMSG
+	*	1619722997	0
+	"	1	13
+	^	1	14
+	.	1	14
+	+	1	14
+
+> ~/zshrc
+	*	1619705854	0
+	"	1	0
+
+> ~/.zhsrc
+	*	1619705849	0
+	"	1	0
+
+> ~/Documents/Code/numerik/matrizen.cpp
+	*	1619704555	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/vue/src/store/RootState.ts
+	*	1619640037	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/Documents/Code/facekoob/vue/src/store/terminal
+	*	1619639824	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/vue/src/store/RootGetterTree.ts
+	*	1619639686	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/vue/src/store/RootMutationTree.ts
+	*	1619639653	0
+	"	45	31
+	^	45	33
+	.	46	0
+	+	46	0
+
+> ~/Documents/Code/tmp/docker-compose.yml
+	*	1619555345	0
+	"	1	0
+
+> ~/.gitconfig
+	*	1619548402	0
+	"	1	0
+
+> /usr/share/vim/vim82/doc/repeat.txt
+	*	1619548239	0
+	"	970	24
+
+> /usr/share/vim/vim82/doc/scroll.txt
+	*	1619548226	0
+	"	323	0
+
+> ~/Documents/Code/facekoob/vue/src/store/.vimrc
+	*	1619548119	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/vue/src/store/[Command Line]
+	*	1619547853	0
+	"	1	0
+
+> ~/.vim/autoload/.zshrc
+	*	1619546850	0
+	"	1	0
+
+> ~/Documents/Code/facekoob/laravel/.git/COMMIT_EDITMSG
+	*	1619198281	0
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/Documents/Code/facekoob/.git/COMMIT_EDITMSG
+	*	1619192518	0
+	"	1	0
+	^	1	34
+	.	1	34
+	+	2	0
+	+	1	42
+	+	1	34
+
+> ~/Documents/Code/itw-21/backend/src/scratch.json
+	*	1619004256	0
+	"	6	0
+
+> ~/Desktop/test/test.js
+	*	1618858494	0
+	"	1	0
+	^	4	38
+	.	4	37
+	+	1	37
+	+	4	37
+
+> ~/Documents/Code/itw-21/itw21d-fe/frontend/package.json
+	*	1618848141	0
+	"	1	0
+
+> ~/Documents/Uni/formal-lan/rfc2616.txt
+	*	1618844741	0
+	"	771	30
+	^	60	0
+	.	59	0
+	+	9859	0
+	+	9858	71
+	+	59	0
+
+> ~/Documents/Uni/formal-lan/vim-cheat.txt
+	*	1618843411	0
+	"	18	22
+	^	42	16
+	.	42	16
+	+	22	0
+	+	28	20
+	+	30	14
+	+	33	23
+	+	32	13
+	+	35	18
+	+	2	0
+	+	1	8
+	+	39	41
+	+	42	16
+
+> ~/Documents/Uni/formal-lan/chea
+	*	1618841813	0
+	"	1	0
+
+> ~/Documents/Code/itw-21/itw21d-api/docker-compose.yml
+	*	1618841611	0
+	"	14	3
+
+> /usr/share/vim/vim82/doc/pattern.txt
+	*	1618841443	0
+	"	369	27
+
+> ~/Documents/Code/itw-21/itw21d-api/src/plugins/db.js
+	*	1618820161	0
+	"	31	0
