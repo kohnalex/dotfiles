@@ -49,7 +49,6 @@ if type -q gcc-11
 	alias cc='gcc-11'
 	alias g++='g++-11'
 	alias c++='c++-11'
-	alias vim="/opt/homebrew/bin/vim"
 end
 
 ### FZF
