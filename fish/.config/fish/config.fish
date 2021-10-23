@@ -41,9 +41,12 @@ alias ff='cd_with_fzf_home'
 alias ffc='cd_with_fzf'
 alias tt='tree -a -C -L 2'
 alias cdc="cd ~/Documents/Code"
+alias cdd="cd ~/.dotfiles"
+alias cdf="cd ~/.dotfiles/fish/.config/fish"
 alias md="mkdir"
 alias py="python3"
 alias t="tmux"
+alias ta="tmux attach"
 
 # alias khnlx="ssh -i ~/.ssh/my_keys/khnlx_id_rsa -t alex@h2888247.stratoserver.net"
 alias khnlx="ssh khnlx@h2888247.stratoserver.net"
