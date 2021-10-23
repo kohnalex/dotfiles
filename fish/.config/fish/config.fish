@@ -5,6 +5,17 @@ end
 ### STANDARD STUFF ###
 set fish_greeting
 
+### ENV VARIABLES ###
+# eval "(/opt/homebrew/bin/brew shellenv)"
+# export PATH=~/Library/Jetbrains/bin:$PATH
+# export PATH="/opt/homebrew/opt/node@14/bin:$PATH"
+if status --is-interactive
+  eval (/opt/homebrew/bin/brew shellenv)
+end
+fish_add_path ~/Library/Jetbrains/bin
+fish_add_path /opt/homebrew/opt/node@14/bin
+
+
 ### ALIASES ###
 ## Brew vs. MacOS Remappings
 alias gcc='gcc-11'
