@@ -2,76 +2,48 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# name: sashimi
-function fish_prompt
-  set -l last_status $status
-  set -l cyan (set_color -o cyan)
-  set -l yellow (set_color -o yellow)
-  set -g red (set_color -o red)
-  set -g blue (set_color -o blue)
-  set -l green (set_color -o green)
-  set -g normal (set_color normal)
+### STANDARD STUFF ###
+set fish_greeting
 
-  set -l ahead (_git_ahead)
-  set -g whitespace ' '
+### ALIASES ###
+## Brew vs. MacOS Remappings
+alias gcc='gcc-11'
+alias cc='gcc-11'
+alias g++='g++-11'
+alias c++='c++-11'
+alias vim="/opt/homebrew/bin/vim"
 
-  if test $last_status = 0
-    set initial_indicator "$green◆"
-    set status_indicator "$normal❯$cyan❯$green❯"
-  else
-    set initial_indicator "$red✖ $last_status"
-    set status_indicator "$red❯$red❯$red❯"
-  end
-  set -l cwd $cyan(basename (prompt_pwd))
+# Sonstige
+alias ff='cd_with_fzf_home'
+alias ffc='cd_with_fzf'
+alias tt='tree -a -C -L 2'
+alias cdc="cd ~/Documents/Code"
+alias md="mkdir"
+alias py="python3"
+alias t="tmux"
 
-  if [ (_git_branch_name) ]
+# alias khnlx="ssh -i ~/.ssh/my_keys/khnlx_id_rsa -t alex@h2888247.stratoserver.net"
+alias khnlx="ssh khnlx@h2888247.stratoserver.net"
 
-    if test (_git_branch_name) = 'master'
-      set -l git_branch (_git_branch_name)
-      set git_info "$normal git:($red$git_branch$normal)"
-    else
-      set -l git_branch (_git_branch_name)
-      set git_info "$normal git:($blue$git_branch$normal)"
-    end
-
-    if [ (_is_git_dirty) ]
-      set -l dirty "$yellow ✗"
-      set git_info "$git_info$dirty"
-    end
-  end
-
-  # Notify if a command took more than 5 minutes
-  if [ "$CMD_DURATION" -gt 300000 ]
-    echo The last command took (math "$CMD_DURATION/1000") seconds.
-  end
-
-  echo -n -s $initial_indicator $whitespace $cwd $git_info $whitespace $ahead $status_indicator $whitespace
+# docker
+alias dockervm='docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh'
+alias dockerbash='docker_exec_bash'
+function docker_exec_bash
+	docker exec -it "$1" /bin/bash
 end
 
-function _git_ahead
-  set -l commits (command git rev-list --left-right '@{upstream}...HEAD' 2>/dev/null)
-  if [ $status != 0 ]
-    return
-  end
-  set -l behind (count (for arg in $commits; echo $arg; end | grep '^<'))
-  set -l ahead  (count (for arg in $commits; echo $arg; end | grep -v '^<'))
-  switch "$ahead $behind"
-    case ''     # no upstream
-    case '0 0'  # equal to upstream
-      return
-    case '* 0'  # ahead of upstream
-      echo "$blue↑$normal_c$ahead$whitespace"
-    case '0 *'  # behind upstream
-      echo "$red↓$normal_c$behind$whitespace"
-    case '*'    # diverged from upstream
-      echo "$blue↑$normal$ahead $red↓$normal_c$behind$whitespace"
-  end
+# Eigene Funktionen
+# Ordner erstellen und reingehen
+function mdc
+    mkdir -p -- "$1" &&
+    cd -P -- "$1"
 end
 
-function _git_branch_name
-  echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')
+# Ordner mit fzf finden mit $HOME als root
+function cd_with_fzf_home 
+    cd $HOME && cd "(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview")" && pwd && tree -a -C -L 1
 end
-
-function _is_git_dirty
-  echo (command git status -s --ignore-submodules=dirty 2>/dev/null)
-end
+# Ordner mit fzf finden mit (pwd) als root
+function cd_with_fzf 
+    cd "(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview")" && pwd && tree -a -C -L 1
+end 
