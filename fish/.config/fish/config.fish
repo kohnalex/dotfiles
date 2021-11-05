@@ -16,6 +16,8 @@ end
 ### STANDARD STUFF
 ###
 set fish_greeting
+# fish_vi_key_bindings
+# fish_default_key_bindings
 
 ###
 ### ADD PATH
@@ -34,7 +36,7 @@ if type -q exa
 	alias ll='exa -al --color=always --group-directories-first'  # long format
 	alias lt='exa -aT --color=always --group-directories-first' # tree listing
 	alias l.='exa -a | egrep "^\."'
-	alias l='ls'
+	abbr l "ll"
 end
 
 ### BAT
@@ -86,6 +88,9 @@ alias cdf="cd ~/.dotfiles/fish/.config/fish"
 alias md="mkdir"
 alias khnlx="ssh khnlx@h2888247.stratoserver.net"
 alias sfish="source ~/.config/fish/config.fish"
+
+alias vion="fish_vi_key_bindings"
+alias vioff="fish_default_key_bindings"
 
 # Create directory and cd into
 function mdc
