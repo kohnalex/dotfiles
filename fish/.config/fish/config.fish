@@ -16,6 +16,7 @@ end
 ### STANDARD STUFF
 ###
 set fish_greeting
+set theme_color_scheme gruvbox
 
 ###
 ### ADD PATH
@@ -36,6 +37,7 @@ end
 if type -q git
 	abbr g "git"
 	abbr gss "git status -s"
+	abbr glo "git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
 
 	abbr ga "git add"
 	abbr ga. "git add ."
