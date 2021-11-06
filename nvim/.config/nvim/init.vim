@@ -18,7 +18,7 @@ set nu
 filetype plugin on
 syntax on
 
-set bg=light
+" set bg=light
 colorscheme gruvbox 
 
 " Tabs und co configs
