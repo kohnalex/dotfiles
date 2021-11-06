@@ -29,12 +29,29 @@ fish_add_path /opt/homebrew/opt/node@14/bin
 ### ALIASES & CUSTOM FUNCTIONS
 ###
 
+### GIT
+if type -q git
+	abbr g "git"
+	abbr gss "git status -s"
+
+	abbr ga "git add"
+	abbr gc "git commit -v"
+	abbr gc! "git commit --amend"
+	abbr gac "git add . && git commit -v"
+
+	abbr gp "git push"
+	abbr gp! "git push --force"
+	abbr gl "git pull"
+	abbr glr "git pull --rebase"
+end
+
 ### EXA
 if type -q exa
 	alias ls='exa -l --color=always --group-directories-first' # my preferred listing
 	alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 	alias ll='exa -al --color=always --group-directories-first'  # long format
-	alias lt='exa -aT --color=always --group-directories-first' # tree listing
+	alias llt='exa -aT --color=always --group-directories-first' # tree listing all
+	alias lt='exa -T --color=always --group-directories-first' # tree listing hide dotfiles TODO: exclude .git & node_modules
 	alias l.='exa -a | egrep "^\."'
 	abbr l "ll"
 end
