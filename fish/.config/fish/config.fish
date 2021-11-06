@@ -29,12 +29,18 @@ fish_add_path /opt/homebrew/opt/node@14/bin
 ### ALIASES & CUSTOM FUNCTIONS
 ###
 
+### VIM
+if type -q nvim
+	alias vim='nvim'
+end
+
 ### GIT
 if type -q git
 	abbr g "git"
 	abbr gss "git status -s"
 
 	abbr ga "git add"
+	abbr ga. "git add ."
 	abbr gc "git commit -v"
 	abbr gc! "git commit --amend"
 	abbr gac "git add . && git commit -v"
@@ -55,6 +61,11 @@ if type -q exa
 	alias l.='exa -a | egrep "^\."'
 	abbr l "ll"
 end
+
+### CD
+
+alias ..='cd ../../'
+alias ...='cd ../../../'
 
 ### BAT
 if type -q bat
