@@ -18,7 +18,8 @@ set nu
 filetype plugin on
 syntax on
 
-colorscheme gruvbox
+set bg=light
+colorscheme gruvbox 
 
 " Tabs und co configs
 set backspace=indent,eol,start
