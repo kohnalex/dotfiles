@@ -53,9 +53,9 @@ end
 
 ### EXA
 if type -q exa
-	alias ls='exa -l --color=always --group-directories-first' # my preferred listing
-	alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-	alias ll='exa -al --color=always --group-directories-first'  # long format
+	alias ls='exa -l --color=always --group-directories-first --octal-permissions' # my preferred listing
+	alias la='exa -a --color=always --group-directories-first --octal-permissions'  # all files and dirs
+	alias ll='exa -al --color=always --group-directories-first --octal-permissions'  # long format
 	alias llt='exa -aT --color=always --group-directories-first' # tree listing all
 	alias lt='exa -T --color=always --group-directories-first' # tree listing hide dotfiles TODO: exclude .git & node_modules
 	alias l.='exa -a | egrep "^\."'
@@ -83,12 +83,12 @@ end
 
 ### FZF
 if type -q fzf
-	alias ff='fd . --hidden | fzf --preview "bat {-1} --color=always"'
-	alias ffcat='ff | xargs bat'
+	alias fff='fd . --hidden | fzf --preview "bat {-1} --color=always"'
+	alias ffcat='fff | xargs bat'
 
 	# Search for file and open with vim
-	function ffvim
-		set tmpvar (ff)
+	function ffv
+		set tmpvar (fff)
 		if test -n "$tmpvar"
 			vim $tmpvar
 		end
@@ -107,6 +107,10 @@ if type -q fzf
 
 		set -e preview
 	end
+
+    function ff
+        cd (fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview") && pwd && tree -a -C -L 1
+    end
 end
 
 ### MISC
