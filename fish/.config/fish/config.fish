@@ -49,6 +49,9 @@ if type -q git
 	abbr gp! "git push --force"
 	abbr gl "git pull"
 	abbr glr "git pull --rebase"
+    abbr grm "git rebase origin/master"
+    abbr gf "git fetch"
+    abbr gfa "git fetch --all"
 end
 
 ### EXA
@@ -66,11 +69,7 @@ end
 
 alias ..='cd ../../'
 alias ...='cd ../../../'
-
-### BAT
-if type -q bat
-	alias cat='bat'
-end
+alias ....='cd ../../../../'
 
 
 ### GCC
@@ -115,8 +114,6 @@ end
 
 ### MISC
 alias cdc="cd ~/Documents/Code"
-alias cdd="cd ~/.dotfiles"
-alias cdf="cd ~/.dotfiles/fish/.config/fish"
 alias md="mkdir"
 alias khnlx="ssh khnlx@h2888247.stratoserver.net"
 alias sfish="source ~/.config/fish/config.fish"
