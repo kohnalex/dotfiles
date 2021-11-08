@@ -1,18 +1,12 @@
-" Plugins Autoloader (:PlugInstall in vim aufrufen)
-call plug#begin(stdpath('data') . '/plugged')
+" Imports "{{{
+" ---------------------------------------------------------------------
+source ~/.config/nvim/plug.vim
+source ~/.config/nvim/maps.vim
+"}}}
+"
 
-" Git
-Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
-
-" Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Theme
-Plug 'morhetz/gruvbox'
-
-call plug#end()
+" Settings "{{{
+" ---------------------------------------------------------------------
 
 " Suche highlighten und schon suchen während man tippt
 set hlsearch
@@ -23,12 +17,13 @@ set nu
 set relativenumber
 
 " Syntax highlighting
-filetype plugin on
+filetype plugin indent on
 syntax on
 
-" Color scheme
-colorscheme gruvbox 
+" Color scheme & style
+colorscheme gruvbox
 set bg=dark
+let g:airline_powerline_fonts = 1
 
 " Tabs und co configs
 set backspace=indent,eol,start
@@ -42,10 +37,9 @@ set smartindent
 set noerrorbells
 set scrolloff=8
 set signcolumn=yes
+set hidden
+set nobackup
+set nowritebackup
+set exrc
 
-" Font setzen
-let g:airline_powerline_fonts = 1
-
-""" TODO
-" set hidden
-" set colorcolumn=80
+"}}}
