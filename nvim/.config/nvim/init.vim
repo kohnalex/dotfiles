@@ -21,9 +21,9 @@ filetype plugin indent on
 syntax on
 
 " Color scheme & style
-colorscheme gruvbox
 set bg=dark
-let g:airline_powerline_fonts = 1
+colorscheme nord
+let g:airline_powerline_fonts=1
 
 " Tabs und co configs
 set backspace=indent,eol,start
@@ -35,7 +35,7 @@ set smartindent
 
 " Misc
 set noerrorbells
-set scrolloff=8
+set scrolloff=999
 set signcolumn=yes
 set hidden
 set nobackup
