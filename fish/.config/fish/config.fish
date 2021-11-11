@@ -16,7 +16,7 @@ end
 ### STANDARD STUFF
 ###
 set fish_greeting
-set theme_color_scheme gruvbox
+set theme_color_scheme nord
 
 ###
 ### ADD PATH
@@ -117,6 +117,7 @@ alias cdc="cd ~/Documents/Code"
 alias md="mkdir"
 alias khnlx="ssh khnlx@h2888247.stratoserver.net"
 alias sfish="source ~/.config/fish/config.fish"
+alias :q="exit"
 
 alias vion="fish_vi_key_bindings"
 alias vioff="fish_default_key_bindings"
