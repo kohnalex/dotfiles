@@ -1,5 +1,5 @@
 " Open git project file
-nnoremap <C-p> :Telescope find_files<CR>
+nnoremap <C-p> :Telescope git_files<CR>
 
 " Split pane Navigation
 nnoremap <C-J> <C-W><C-J>
