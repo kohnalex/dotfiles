@@ -12,7 +12,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'cohama/lexima.vim'
 
 if has("nvim")
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " x86 vs arm64e issues with treesitter
+    " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}      
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
