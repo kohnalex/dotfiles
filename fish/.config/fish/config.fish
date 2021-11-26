@@ -8,8 +8,11 @@
                 
 
 if status is-interactive
-	# set homebrew path environment
-	eval (/opt/homebrew/bin/brew shellenv)
+    if test -d /opt/homebrew/bin/brew
+          set homebrew path environment
+          eval (/opt/homebrew/bin/brew shellenv)
+        echo "dir exists"
+    end
 end
 
 ###
@@ -21,17 +24,26 @@ set theme_color_scheme gruvbox
 ###
 ### ADD PATH
 ###
-fish_add_path ~/Library/Jetbrains/bin
-fish_add_path /opt/homebrew/opt/node@14/bin
-# fish_add_path /Users/alex/Documents/Code/neovide/target/release/
+if test -d ~/Library/Jetbrains/bin
+    fish_add_path ~/Library/Jetbrains/bin
+end
 
+if test -d opt/homebrew/opt/node@14/bin
+    fish_add_path /opt/homebrew/opt/node@14/bin
+end
+
+# JAVA
+if test -d /usr/local/opt/openjdk@11/bin
+    fish_add_path usr/local/opt/openjdk@11/bin
+end
 ###
 ### ALIASES & CUSTOM FUNCTIONS
 ###
 
 ### VIM
 if type -q nvim
-	alias vim='nvim'
+	alias vim=(which nvim)
+    set -Ux EDITOR (which nvim)
 end
 
 ### GIT
