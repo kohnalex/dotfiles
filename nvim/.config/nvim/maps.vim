@@ -1,5 +1,6 @@
 " Open git project file
 nnoremap <C-p> :Telescope git_files<CR>
+nnoremap <silent>gp :CocCommand prettier.formatFile<CR>
 
 " Split pane Navigation
 nnoremap <C-J> <C-W><C-J>
