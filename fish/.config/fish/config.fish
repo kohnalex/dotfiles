@@ -16,13 +16,14 @@ end
 ### STANDARD STUFF
 ###
 set fish_greeting
-set theme_color_scheme nord
+set theme_color_scheme gruvbox
 
 ###
 ### ADD PATH
 ###
 fish_add_path ~/Library/Jetbrains/bin
 fish_add_path /opt/homebrew/opt/node@14/bin
+# fish_add_path /Users/alex/Documents/Code/neovide/target/release/
 
 ###
 ### ALIASES & CUSTOM FUNCTIONS
@@ -37,13 +38,17 @@ end
 if type -q git
 	abbr g "git"
 	abbr gss "git status -s"
-	abbr glo "git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
+	abbr glo "git log --pretty='%Cred%h%Creset%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
 
 	abbr ga "git add"
 	abbr ga. "git add ."
 	abbr gc "git commit -v"
 	abbr gc! "git commit --amend"
+	abbr gc!! "git commit --amend --no-edit"
 	abbr gac "git add . && git commit -v"
+
+    abbr gco "git checkout"
+    abbr gco! "git checkout -- ."
 
 	abbr gp "git push"
 	abbr gp! "git push --force"

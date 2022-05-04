@@ -10,6 +10,7 @@ Plug 'mhinz/vim-signify'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'cohama/lexima.vim'
+Plug 'morhetz/gruvbox'
 
 if has("nvim")
     " x86 vs arm64e issues with treesitter

@@ -22,7 +22,7 @@ syntax on
 
 " Color scheme & style
 set bg=dark
-colorscheme nord
+colorscheme gruvbox
 let g:airline_powerline_fonts=1
 
 " Tabs und co configs
