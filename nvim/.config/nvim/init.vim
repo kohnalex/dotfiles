@@ -1,24 +1,4 @@
-" Imports "{{{
-" ---------------------------------------------------------------------
-source ~/.config/nvim/plug.vim
-source ~/.config/nvim/maps.vim
-"}}}
-"
-
-" Settings "{{{
-" ---------------------------------------------------------------------
-
-" Suche highlighten und schon suchen während man tippt
-set hlsearch
-set incsearch
-
-" Zeilennummern anzeigen
-set nu
-set relativenumber
-
-" Syntax highlighting
-filetype plugin indent on
-syntax on
+lua require 'init'
 
 " Color scheme & style
 set bg=dark
@@ -34,6 +14,9 @@ set expandtab
 set smartindent
 
 " Misc
+filetype plugin indent on
+syntax on
+
 set noerrorbells
 set scrolloff=999
 set signcolumn=yes
@@ -42,4 +25,8 @@ set nobackup
 set nowritebackup
 set exrc
 
-"}}}
+set hlsearch
+set incsearch
+
+set nu
+set relativenumber
