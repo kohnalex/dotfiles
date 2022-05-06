@@ -4,6 +4,7 @@ return require('packer').startup(function()
     use 'vim-airline/vim-airline-themes'
     use 'morhetz/gruvbox'
     use 'cohama/lexima.vim'
-    use 'tpope/vim-fugitive'
     use 'mhinz/vim-signify'
+    use 'tpope/vim-fugitive'
+    use 'tpope/vim-commentary'
 end)
