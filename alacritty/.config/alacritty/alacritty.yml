@@ -12,8 +12,7 @@ font:
 
 window:
   decorations: Buttonless
-
-background_opacity: 1.00
+  opacity: 1.00
 
 #
 # Colors (Nord)
