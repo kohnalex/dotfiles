@@ -1,30 +1,58 @@
+-- Protected call so we don't error out on first use
+ok, packer = pcall(require, 'packer')
+if not ok then
+    print 'loading packer failed'
+    return 
+end
+
+-- Have packer use a floating window
+packer.init {
+    display = {
+        open_fn = function()
+            return require("packer.util").float { border = "rounded" }
+        end,
+    }
+}
+
+-- Plugin registration
 return require('packer').startup(function()
-    -- packer manages itseld
+    -- Packer manages itseld
     use 'wbthomason/packer.nvim' 
 
-    -- status line
+    -- Status line
     use 'vim-airline/vim-airline' 
     use 'vim-airline/vim-airline-themes'
 
-    -- colorschemes
+    -- Colorschemes
     use 'morhetz/gruvbox'
 
-    -- auto closing brackets, spaces, etc.
+    -- Auto closing brackets, spaces, etc.
     use 'cohama/lexima.vim'
 
-    -- git status annotation in buffer
+    -- Git status annotation in buffer
     use 'mhinz/vim-signify'
 
-    -- op git pplugin
+    -- Tpopes git pplugin
     use 'tpope/vim-fugitive'
 
-    -- auto commenting with 'gcc'
+    -- Auto commenting with 'gcc'
     use 'tpope/vim-commentary'
 
-    -- better highlighting and parsing
+    -- Better highlighting and parsing
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ":TSUpdate"
     }
+
+    -- Code completion
+    use 'hrsh7th/nvim-cmp' -- The completion plugin
+    use 'hrsh7th/cmp-buffer' -- Buffer completions
+    use 'hrsh7th/cmp-path' -- Path completions
+    use 'hrsh7th/cmp-cmdline' -- Cmdline completions
+    use 'saadparwaiz1/cmp_luasnip' -- Snippet completions
+
+    use 'L3MON4D3/LuaSnip' -- Snippet Engine. Required by cmp to run.
+    use 'rafamadriz/friendly-snippets' -- A collection of fine snippets.
+
     -- use 'neovim/nvim-lspconfig'
 end)
