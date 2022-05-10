@@ -11,12 +11,12 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set smartindent
+" set smartindent
 
 " Misc
 filetype plugin indent on
-syntax on
 
+" syntax on
 set noerrorbells
 set scrolloff=999
 set signcolumn=yes
