@@ -1,5 +1,5 @@
 require("plugins")
-require("treesitter")
+require("conf.treesitter")
 require("keymapping")
 
 -- Set spacebar as mapleader <Leader>
