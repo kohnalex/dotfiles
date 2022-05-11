@@ -5,6 +5,7 @@ local servers = {
   sumneko_lua = {},
   tsserver = {},
   eslint = {},
+  jdtls = {},
 }
 
 local function on_attach(client, bufnr)
