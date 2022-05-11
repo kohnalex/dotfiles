@@ -59,7 +59,7 @@ return require('packer').startup(function()
   use {
     "folke/which-key.nvim",
     config = function()
-      require("conf/which-key").setup()
+      require("config/which-key").setup()
     end
   }
 
@@ -70,7 +70,7 @@ return require('packer').startup(function()
     event = "BufReadPre",
     wants = { "nvim-lsp-installer" },
     config = function()
-      require("conf.lsp").setup()
+      require("config.lsp").setup()
     end,
     requires = {
       "williamboman/nvim-lsp-installer",

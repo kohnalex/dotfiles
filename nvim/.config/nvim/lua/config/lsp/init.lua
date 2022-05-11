@@ -18,7 +18,7 @@ local function on_attach(client, bufnr)
   vim.api.nvim_buf_set_option(0, "formatexpr", "v:lua.vim.lsp.formatexpr()")
 
   -- Configure key mappings
-  require("conf.lsp.keymaps").setup(client, bufnr)
+  require("config.lsp.keymaps").setup(client, bufnr)
 end
 
 local opts = {
@@ -29,7 +29,7 @@ local opts = {
 }
 
 function M.setup()
-  require("conf.lsp.installer").setup(servers, opts)
+  require("config.lsp.installer").setup(servers, opts)
 end
 
 return M

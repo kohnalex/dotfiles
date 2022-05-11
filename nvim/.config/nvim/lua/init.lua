@@ -1,4 +1,4 @@
 require("plugins")
-require("conf.treesitter")
-require("conf.cmp")
-require("conf.lsp")
+require("config.treesitter")
+require("config.cmp")
+require("config.lsp")
