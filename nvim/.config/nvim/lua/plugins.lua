@@ -1,8 +1,8 @@
 -- Protected call so we don't error out on first use
-ok, packer = pcall(require, 'packer')
+local ok, packer = pcall(require, 'packer')
 if not ok then
-  print 'loading packer failed'
-  return 
+  print 'packer not ok'
+  return
 end
 
 -- Have packer use a floating window
@@ -17,10 +17,10 @@ packer.init {
 -- Plugin registration
 return require('packer').startup(function()
   -- Packer manages itself
-  use 'wbthomason/packer.nvim' 
+  use 'wbthomason/packer.nvim'
 
   -- Status line
-  use 'vim-airline/vim-airline' 
+  use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
 
   -- Colorschemes
@@ -46,12 +46,36 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-buffer' -- Buffer completions
   use 'hrsh7th/cmp-path' -- Path completions
   use 'hrsh7th/cmp-cmdline' -- Cmdline completions
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP completions
   use 'saadparwaiz1/cmp_luasnip' -- Snippet completions
 
   use 'L3MON4D3/LuaSnip' -- Snippet Engine. Required by cmp to run.
   use 'rafamadriz/friendly-snippets' -- A collection of fine snippets.
 
-  -- LSP
-  use 'neovim/nvim-lspconfig' -- Enable LSP
-  use 'williamboman/nvim-lsp-installer' -- simple language server installer
+  -- LSP and LSP installer
+  use {
+    "neovim/nvim-lspconfig",
+    opt = true,
+    event = "BufReadPre",
+    wants = { "nvim-lsp-installer" },
+    config = function()
+      require("conf.lsp").setup()
+    end,
+    requires = {
+      "williamboman/nvim-lsp-installer",
+    },
+  }
+
+  -- Whichkey
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+
 end)
