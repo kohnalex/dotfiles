@@ -36,27 +36,27 @@ end
 
 ### GIT
 if type -q git
-	abbr g "git"
-	abbr gss "git status -s"
-	abbr glo "git log --pretty='%Cred%h%Creset%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
+  abbr g "git"
+  abbr gss "git status -s"
+  abbr glo "git log --pretty='%Cred%h%Creset%C(auto)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'"
 
-	abbr ga "git add"
-	abbr ga. "git add ."
-	abbr gc "git commit -v"
-	abbr gc! "git commit --amend"
-	abbr gc!! "git commit --amend --no-edit"
-	abbr gac "git add . && git commit -v"
+  abbr ga "git add"
+  abbr ga. "git add ."
+  abbr gc "git commit -v"
+  abbr gc! "git commit --amend"
+  abbr gc!! "git commit --amend --no-edit"
+  abbr gac "git add . && git commit -v"
 
-    abbr gco "git checkout"
-    abbr gco! "git checkout -- ."
+  abbr gco "git checkout"
+  abbr gco! "git checkout -- ."
 
-	abbr gp "git push"
-	abbr gp! "git push --force"
-	abbr gl "git pull"
-	abbr glr "git pull --rebase"
-    abbr grm "git rebase origin/master"
-    abbr gf "git fetch"
-    abbr gfa "git fetch --all"
+  abbr gp "git push"
+  abbr gp! "git push --force"
+  abbr gl "git pull"
+  abbr glr "git pull --rebase"
+  abbr grm "git rebase origin/master"
+  abbr gf "git fetch"
+  abbr gfa "git fetch --all"
 end
 
 ### EXA
@@ -135,8 +135,8 @@ function mdc
 end
 
 ### TMUX
-alias t="tmux"
-alias ta="tmux attach"
+abbr t "tmux"
+abbr ta "tmux attach"
 
 ### DOCKER
 alias dockervm='docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh'
