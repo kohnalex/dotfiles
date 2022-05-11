@@ -30,3 +30,6 @@ set incsearch
 
 set nu
 set relativenumber
+
+" Neovim
+set laststatus=3
