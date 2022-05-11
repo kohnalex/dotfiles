@@ -39,7 +39,10 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
 
   -- Better highlighting and parsing
-  use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ":TSUpdate"
+  }
 
   -- Code completion
   use 'hrsh7th/nvim-cmp' -- The completion plugin
@@ -51,6 +54,14 @@ return require('packer').startup(function()
 
   use 'L3MON4D3/LuaSnip' -- Snippet Engine. Required by cmp to run.
   use 'rafamadriz/friendly-snippets' -- A collection of fine snippets.
+
+  -- Whichkey
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("conf/which-key").setup()
+    end
+  }
 
   -- LSP and LSP installer
   use {
@@ -65,17 +76,4 @@ return require('packer').startup(function()
       "williamboman/nvim-lsp-installer",
     },
   }
-
-  -- Whichkey
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
-  }
-
 end)

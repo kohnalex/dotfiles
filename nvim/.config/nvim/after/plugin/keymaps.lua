@@ -3,9 +3,6 @@ local keymap = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 local expr_opts = { noremap = true, expr = true, silent = true }
 
--- Disable spacebar in normal mode
-keymap('n', ' ', '', default_opts)
-
 -- Better escape using jk in insert and terminal mode
 keymap("i", "jk", "<ESC>", default_opts)
 keymap("t", "jk", "<C-\\><C-n>", default_opts)
@@ -31,7 +28,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", default_opts)
 
 -- TODO: Maybe later...
 
--- Switch buffer 
+-- Switch buffer
 -- Description: We use <Shift-h> and <Shift-j> to navigate between the previous and next buffer
 -- keymap("n", "<S-h>", ":bprevious<CR>", default_opts)
 -- keymap("n", "<S-l>", ":bnext<CR>", default_opts)
