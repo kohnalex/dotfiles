@@ -24,6 +24,11 @@ set theme_color_scheme gruvbox
 ###
 ### ADD PATH
 ###
+
+if test -d /Users/alex/.local/bin/JetBrains
+    fish_add_path /Users/alex/.local/bin/JetBrains
+end
+
 if test -d ~/Library/Jetbrains/bin
     fish_add_path ~/Library/Jetbrains/bin
 end
