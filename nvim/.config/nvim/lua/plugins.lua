@@ -32,11 +32,10 @@ return require('packer').startup(function()
   -- Git status annotation in buffer
   use 'mhinz/vim-signify'
 
-  -- Tpopes git plugin
+  -- Tpope goodies
   use 'tpope/vim-fugitive'
-
-  -- Auto commenting with 'gcc'
   use 'tpope/vim-commentary'
+  use 'tpope/vim-sleuth'
 
   -- Better highlighting and parsing
   use {
