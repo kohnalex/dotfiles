@@ -43,6 +43,16 @@ return require('packer').startup(function()
     run = ":TSUpdate"
   }
 
+  -- Auto Tags
+    use {
+      "windwp/nvim-ts-autotag",
+      wants = "nvim-treesitter",
+      event = "InsertEnter",
+      config = function()
+        require("nvim-ts-autotag").setup { enable = true }
+      end,
+    }
+
   -- Code completion
   use 'hrsh7th/nvim-cmp' -- The completion plugin
   use 'hrsh7th/cmp-buffer' -- Buffer completions
