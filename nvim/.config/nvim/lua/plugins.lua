@@ -57,15 +57,21 @@ return require('packer').startup(function()
   }
 
   -- Code completion
-  use 'hrsh7th/nvim-cmp' -- The completion plugin
-  use 'hrsh7th/cmp-buffer' -- Buffer completions
-  use 'hrsh7th/cmp-path' -- Path completions
-  use 'hrsh7th/cmp-cmdline' -- Cmdline completions
-  use 'hrsh7th/cmp-nvim-lsp' -- LSP completions
-  use 'saadparwaiz1/cmp_luasnip' -- Snippet completions
-
-  use 'L3MON4D3/LuaSnip' -- Snippet Engine. Required by cmp to run.
-  use 'rafamadriz/friendly-snippets' -- A collection of fine snippets.
+  use {
+    "hrsh7th/nvim-cmp",
+    requires = {
+      'hrsh7th/cmp-buffer', -- Buffer completions
+      'hrsh7th/cmp-path', -- Path completions
+      'hrsh7th/cmp-cmdline', -- Cmdline completions
+      'hrsh7th/cmp-nvim-lsp', -- LSP completions
+      'saadparwaiz1/cmp_luasnip', -- Snippet completions
+      'L3MON4D3/LuaSnip', -- Snippet Engine. Required by cmp to run.
+      'rafamadriz/friendly-snippets', -- A collection of fine snippets.
+    },
+    config = function()
+      require('config.cmp').setup()
+    end,
+  }
 
   -- Whichkey
   use {
