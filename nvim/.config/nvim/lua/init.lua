@@ -1,4 +1,2 @@
 require("plugins")
-require("config.treesitter")
-require("config.cmp")
-require("config.lsp")
+require("config.cmp") -- TODO: modularize and call setup in plugins.lua

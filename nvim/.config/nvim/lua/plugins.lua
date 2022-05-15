@@ -40,18 +40,21 @@ return require('packer').startup(function()
   -- Better highlighting and parsing
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ":TSUpdate"
+    run = ":TSUpdate",
+    config = function()
+      require("config.treesitter").setup()
+    end
   }
 
   -- Auto Tags
-    use {
-      "windwp/nvim-ts-autotag",
-      wants = "nvim-treesitter",
-      event = "InsertEnter",
-      config = function()
-        require("nvim-ts-autotag").setup { enable = true }
-      end,
-    }
+  use {
+    "windwp/nvim-ts-autotag",
+    wants = "nvim-treesitter",
+    event = "InsertEnter",
+    config = function()
+      require("nvim-ts-autotag").setup { enable = true }
+    end,
+  }
 
   -- Code completion
   use 'hrsh7th/nvim-cmp' -- The completion plugin
@@ -75,9 +78,6 @@ return require('packer').startup(function()
   -- LSP and LSP installer
   use {
     "neovim/nvim-lspconfig",
-    opt = true,
-    event = "BufReadPre",
-    wants = { "nvim-lsp-installer" },
     config = function()
       require("config.lsp").setup()
     end,
