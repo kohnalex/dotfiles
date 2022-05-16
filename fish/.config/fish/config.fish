@@ -7,10 +7,9 @@
                 
 
 if status is-interactive
-    if test -d /opt/homebrew/bin/brew
-          set homebrew path environment
-          eval (/opt/homebrew/bin/brew shellenv)
-        echo "dir exists"
+    if test -d /opt/homebrew/bin
+	  set homebrew path environment
+	  eval (/opt/homebrew/bin/brew shellenv)
     end
 end
 
