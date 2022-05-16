@@ -23,10 +23,18 @@ function M.setup()
     b = { "<cmd>Telescope buffers<cr>", "Buffers" },
     h = { "<cmd>Telescope help_tags<cr>", "Help" },
     o = { "<cmd>Telescope oldfiles<cr>", "Old Files" },
-    g = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
+    F = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
     c = { "<cmd>Telescope commands<cr>", "Commands" },
     r = { "<cmd>Telescope lsp_references<cr>", "References" },
     w = { "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", "Current Buffer" },
+    g = {
+      name = "Git",
+      c = { "<cmd>Telescope git_commits<cr>", "Commits" },
+      C = { "<cmd>Telescope git_bcommits<cr>", "Buffer Commits" },
+      b = { "<cmd>Telescope git_branches<cr>", "Branches" },
+      s = { "<cmd>Telescope git_status<cr>", "Status" },
+      S = { "<cmd>Telescope git_stash<cr>", "Stash" },
+    }
   }
 
   local keymap_p = {
