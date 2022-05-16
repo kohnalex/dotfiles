@@ -27,14 +27,15 @@ function M.setup()
     c = { "<cmd>Telescope commands<cr>", "Commands" },
     r = { "<cmd>Telescope lsp_references<cr>", "References" },
     w = { "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", "Current Buffer" },
-    g = {
-      name = "Git",
-      c = { "<cmd>Telescope git_commits<cr>", "Commits" },
-      C = { "<cmd>Telescope git_bcommits<cr>", "Buffer Commits" },
-      b = { "<cmd>Telescope git_branches<cr>", "Branches" },
-      s = { "<cmd>Telescope git_status<cr>", "Status" },
-      S = { "<cmd>Telescope git_stash<cr>", "Stash" },
-    }
+  }
+
+  local keymap_g = {
+    name = "Git",
+    c = { "<cmd>Telescope git_commits<cr>", "Commits" },
+    C = { "<cmd>Telescope git_bcommits<cr>", "Buffer Commits" },
+    b = { "<cmd>Telescope git_branches<cr>", "Branches" },
+    s = { "<cmd>Telescope git_status<cr>", "Status" },
+    S = { "<cmd>Telescope git_stash<cr>", "Stash" },
   }
 
   local keymap_p = {
@@ -64,6 +65,7 @@ function M.setup()
     },
     p = keymap_p,
     f = keymap_f,
+    g = keymap_g,
   }
 
   whichkey.setup(conf)
