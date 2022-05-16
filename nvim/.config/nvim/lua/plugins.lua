@@ -91,4 +91,13 @@ return require('packer').startup(function()
       "williamboman/nvim-lsp-installer",
     },
   }
+
+  -- Telescope
+  use {
+    "nvim-telescope/telescope.nvim",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-web-devicons",
+    }
+  }
 end)
