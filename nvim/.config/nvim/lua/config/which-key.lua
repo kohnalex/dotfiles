@@ -15,6 +15,28 @@ function M.setup()
     }
   }
 
+
+  -- TELESCOPE
+  local keymap_f = {
+    name = "Find",
+    f = { "<cmd>lua require('utils.finder').find_files()<cr>", "Files" },
+    b = { "<cmd>Telescope buffers<cr>", "Buffers" },
+    h = { "<cmd>Telescope help_tags<cr>", "Help" },
+    o = { "<cmd>Telescope oldfiles<cr>", "Old Files" },
+    g = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
+    c = { "<cmd>Telescope commands<cr>", "Commands" },
+    r = { "<cmd>Telescope lsp_references<cr>", "References" },
+    w = { "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", "Current Buffer" },
+  }
+
+  local keymap_p = {
+    name = "Project",
+    p = { "<cmd>lua require'telescope'.extensions.project.project{}<cr>", "List" },
+    s = { "<cmd>Telescope repo list<cr>", "Search" },
+  }
+
+
+  -- DEFAULT
   local opts = {
     mode = "n", -- normal mode
     prefix = "<leader>",
@@ -24,18 +46,20 @@ function M.setup()
     nowait = false, -- use 'nowait' when creating keymaps
   }
 
-  local mappings = {
+  local keymap = {
     ["w"] = { "<cmd>update!<CR>", "Save" },
     ["q"] = { "<cmd>q<CR>", "Quit" },
 
     b = {
       name = "Buffer",
       c = { "<cmd>bd!<CR>", "Close current buffer" }
-    }
+    },
+    p = keymap_p,
+    f = keymap_f,
   }
 
   whichkey.setup(conf)
-  whichkey.register(mappings, opts)
+  whichkey.register(keymap, opts)
 end
 
 return M
