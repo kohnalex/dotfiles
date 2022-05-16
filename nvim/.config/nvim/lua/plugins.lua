@@ -73,14 +73,6 @@ return require('packer').startup(function()
     end,
   }
 
-  -- Whichkey
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("config/which-key").setup()
-    end
-  }
-
   -- LSP and LSP installer
   use {
     "neovim/nvim-lspconfig",
@@ -98,6 +90,17 @@ return require('packer').startup(function()
     requires = {
       "nvim-lua/plenary.nvim",
       "kyazdani42/nvim-web-devicons",
-    }
+    },
+    config = function()
+      require("config.telescope").setup()
+    end
+  }
+
+  -- Whichkey
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("config/which-key").setup()
+    end
   }
 end)
