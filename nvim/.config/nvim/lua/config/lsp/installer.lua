@@ -5,6 +5,7 @@ local M = {}
 
 function M.setup(servers, options)
   for server_name, _ in pairs(servers) do
+    print(server_name)
     local server_available, server = lsp_installer_servers.get_server(server_name)
 
     if server_available then

@@ -5,7 +5,6 @@
 #
 # Alexander Köhn, 2021
                 
-                
 
 if status is-interactive
     if test -d /opt/homebrew/bin/brew
@@ -24,6 +23,9 @@ set theme_color_scheme gruvbox
 ###
 ### ADD PATH
 ###
+
+# TODO: do better solution
+set -x JAVA_HOME (/usr/libexec/java_home -v 11)
 
 if test -d /Users/alex/.local/bin/JetBrains
     fish_add_path /Users/alex/.local/bin/JetBrains
