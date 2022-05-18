@@ -36,6 +36,7 @@ return require('packer').startup(function()
   use 'tpope/vim-fugitive'
   use 'tpope/vim-commentary'
   use 'tpope/vim-sleuth'
+  use 'tpope/vim-surround'
 
   -- Better highlighting and parsing
   use {
