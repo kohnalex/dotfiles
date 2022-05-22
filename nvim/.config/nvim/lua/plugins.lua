@@ -27,6 +27,7 @@ return require('packer').startup(function()
   use 'morhetz/gruvbox'
   use 'dracula/vim'
   use 'sainnhe/everforest'
+  use 'nlknguyen/papercolor-theme'
 
   -- Auto closing brackets, spaces, etc.
   use 'cohama/lexima.vim'
