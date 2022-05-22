@@ -1,3 +1,5 @@
 *.bak
 *.tmp
 .luarc.json
+
+fish/.config/omf/bundle

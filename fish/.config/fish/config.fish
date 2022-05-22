@@ -17,6 +17,7 @@ end
 ### STANDARD STUFF
 ###
 set fish_greeting
+# set theme_color_scheme terminal-dark
 set theme_color_scheme dracula
 
 ###
@@ -50,7 +51,10 @@ end
 ### VIM
 if type -q nvim
 	alias vim=(which nvim)
-    set -Ux EDITOR (which nvim)
+	set -Ux EDITOR (which nvim)
+end
+if type -q neovide
+	alias vide=(which neovide)
 end
 
 ### GIT

@@ -1,3 +1,10 @@
-git:
-  paging:
-    pager: delta --dark --paging=never
+# git:
+  # paging:
+    # pager: delta --dark --paging=never
+
+
+gui:
+  theme:
+    selectedLineBgColor:
+      - black
+      - bold

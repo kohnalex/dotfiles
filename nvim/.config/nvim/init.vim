@@ -1,9 +1,9 @@
 lua require 'init'
 
 " Color scheme & style
-set bg=dark
+set bg=light
 let g:dracula_colorterm = 0
-colorscheme dracula
+colorscheme papercolor
 let g:airline_powerline_fonts=1
 
 " Tabs und co configs
@@ -28,3 +28,6 @@ set relativenumber
 
 " Neovim
 set laststatus=3
+
+" Neovide
+set guifont=MesloLGS\ NF
