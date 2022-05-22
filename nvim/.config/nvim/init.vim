@@ -1,9 +1,9 @@
 lua require 'init'
 
 " Color scheme & style
-set bg=light
 let g:dracula_colorterm = 0
-colorscheme papercolor
+set bg=dark
+colorscheme dracula
 let g:airline_powerline_fonts=1
 
 " Tabs und co configs
