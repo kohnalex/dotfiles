@@ -76,6 +76,9 @@ if type -q git
   abbr gf "git fetch"
   abbr gfa "git fetch --all"
 end
+if type -q lazygit
+  abbr lg "lazygit"
+end
 
 ### EXA
 if type -q exa
