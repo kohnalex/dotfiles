@@ -1,3 +1,4 @@
+alt_send_esc: false
 font:
   normal:
     family: MesloLGS NF
@@ -97,6 +98,7 @@ window:
 #     magenta: "#d3869b"
 #     cyan: "#8ec07c"
 #     white: "#ebdbb2"
+
 #
 # COLORS DRACULA
 #
@@ -154,4 +156,3 @@ colors:
     white: '#ffffff'
 
 
-alt_send_esc: false
