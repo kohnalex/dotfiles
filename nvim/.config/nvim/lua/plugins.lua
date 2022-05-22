@@ -34,7 +34,6 @@ return require('packer').startup(function()
   use 'mhinz/vim-signify'
 
   -- Tpope goodies
-  use 'tpope/vim-fugitive'
   use 'tpope/vim-commentary'
   use 'tpope/vim-sleuth'
   use 'tpope/vim-surround'

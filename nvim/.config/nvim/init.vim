@@ -28,5 +28,3 @@ set relativenumber
 
 " Neovim
 set laststatus=3
-
-""" TODO: Migrate to lua configuration
