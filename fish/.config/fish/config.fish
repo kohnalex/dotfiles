@@ -17,7 +17,7 @@ end
 ### STANDARD STUFF
 ###
 set fish_greeting
-set theme_color_scheme gruvbox
+set theme_color_scheme dracula
 
 ###
 ### ADD PATH
