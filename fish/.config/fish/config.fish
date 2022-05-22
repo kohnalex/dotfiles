@@ -24,6 +24,7 @@ set theme_color_scheme dracula
 ###
 
 # TODO: do better solution
+set -x XDG_CONFIG_HOME $HOME/.config
 set -x JAVA_HOME (/usr/libexec/java_home -v 11)
 
 if test -d /Users/alex/.local/bin/JetBrains
@@ -75,6 +76,9 @@ if type -q git
   abbr grm "git rebase origin/master"
   abbr gf "git fetch"
   abbr gfa "git fetch --all"
+end
+if type -q lazygit
+  abbr lg "lazygit"
 end
 
 ### EXA
