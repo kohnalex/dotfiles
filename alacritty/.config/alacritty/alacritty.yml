@@ -15,9 +15,7 @@ window:
   decorations: Buttonless
   opacity: 1.00
 
-#
 # COLORS DRACULA
-#
 colors:
   primary:
     background: '#282a36'
@@ -70,5 +68,3 @@ colors:
     magenta: '#ff92df'
     cyan: '#a4ffff'
     white: '#ffffff'
-
-
