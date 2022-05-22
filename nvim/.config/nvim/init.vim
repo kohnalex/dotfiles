@@ -31,3 +31,10 @@ set laststatus=3
 
 " Neovide
 set guifont=MesloLGS\ NF
+if exists('g:neovide')
+  colorscheme papercolor
+  set bg=light
+else
+  colorscheme dracula
+endif
+
