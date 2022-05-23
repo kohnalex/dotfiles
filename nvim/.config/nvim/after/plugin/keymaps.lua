@@ -35,7 +35,7 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", default_opts)
 
 -- Resizing panes
 -- Description: Use arrow keys to resize the split window. Currently conflicting with mouse scrolling.
-keymap("n", "<S-Right>", ":vertical resize +1<CR>", default_opts)
-keymap("n", "<S-Left>", ":vertical resize -1<CR>", default_opts)
-keymap("n", "<S-Up>", ":resize -1<CR>", default_opts)
-keymap("n", "<S-Down>", ":resize +1<CR>", default_opts)
+keymap("n", "<S-Right>", ":vertical resize +2<CR>", default_opts)
+keymap("n", "<S-Left>", ":vertical resize -2<CR>", default_opts)
+keymap("n", "<S-Up>", ":resize -2<CR>", default_opts)
+keymap("n", "<S-Down>", ":resize +2<CR>", default_opts)
