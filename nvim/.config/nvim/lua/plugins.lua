@@ -76,6 +76,16 @@ return require('packer').startup(function()
     end,
   }
 
+
+  use {
+    "kyazdani42/nvim-tree.lua",
+    cmd = { "NvimTreeToggle", "NvimTreeFocus" },
+    config = function()
+      require("config.nvimtree")
+    end
+  }
+
+
   -- LSP and LSP installer
   use {
     "neovim/nvim-lspconfig",

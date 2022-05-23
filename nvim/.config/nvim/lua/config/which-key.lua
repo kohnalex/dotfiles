@@ -46,10 +46,10 @@ function M.setup()
 
   -- PANES
   local keymap_space = {
-    h = {"<cmd>wincmd h<cr>", "Switch left"},
-    j = {"<cmd>wincmd j<cr>", "Switch down"},
-    k = {"<cmd>wincmd k<cr>", "Switch up"},
-    l = {"<cmd>wincmd l<cr>", "Switch right"},
+    h = { "<cmd>wincmd h<cr>", "Switch left" },
+    j = { "<cmd>wincmd j<cr>", "Switch down" },
+    k = { "<cmd>wincmd k<cr>", "Switch up" },
+    l = { "<cmd>wincmd l<cr>", "Switch right" },
   }
 
   -- DEFAULT
@@ -62,10 +62,20 @@ function M.setup()
     nowait = false, -- use 'nowait' when creating keymaps
   }
 
-  local keymap = {
-    ["w"] = { "<cmd>update!<CR>", "Save" },
-    ["q"] = { "<cmd>q<CR>", "Quit" },
+  local opts_no_prefix = {
+    mode = "n", -- normal mode
+    buffer = nil, -- Global mappings. Specify a buffer for buffer local mappings
+    silent = true, -- use 'silent' when creating keymaps
+    noremap = true, -- use 'noremapt' when creating keymaps
+    nowait = false, -- use 'nowait' when creating keymaps
+  }
 
+  local keymap_no_prefix = {
+    ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "toggle nvimtree" },
+  }
+
+  local keymap = {
+    e = { "<cmd> NvimTreeFocus <CR>", "focus nvimtree" },
     b = {
       name = "Buffer",
       c = { "<cmd>bd!<CR>", "Close current buffer" }
@@ -78,6 +88,7 @@ function M.setup()
 
   whichkey.setup(conf)
   whichkey.register(keymap, opts)
+  whichkey.register(keymap_no_prefix, opts_no_prefix)
 end
 
 return M
