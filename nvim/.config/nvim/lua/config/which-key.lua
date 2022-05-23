@@ -44,6 +44,13 @@ function M.setup()
     s = { "<cmd>Telescope repo list<cr>", "Search" },
   }
 
+  -- PANES
+  local keymap_s = {
+    h = {"<cmd>wincmd h<cr>", "Switch left"},
+    j = {"<cmd>wincmd j<cr>", "Switch down"},
+    k = {"<cmd>wincmd k<cr>", "Switch up"},
+    l = {"<cmd>wincmd l<cr>", "Switch right"},
+  }
 
   -- DEFAULT
   local opts = {
@@ -66,6 +73,7 @@ function M.setup()
     p = keymap_p,
     f = keymap_f,
     g = keymap_g,
+    s = keymap_s,
   }
 
   whichkey.setup(conf)
