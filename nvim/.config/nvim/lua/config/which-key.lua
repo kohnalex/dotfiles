@@ -45,7 +45,7 @@ function M.setup()
   }
 
   -- PANES
-  local keymap_s = {
+  local keymap_space = {
     h = {"<cmd>wincmd h<cr>", "Switch left"},
     j = {"<cmd>wincmd j<cr>", "Switch down"},
     k = {"<cmd>wincmd k<cr>", "Switch up"},
@@ -73,7 +73,7 @@ function M.setup()
     p = keymap_p,
     f = keymap_f,
     g = keymap_g,
-    s = keymap_s,
+    ["<space>"] = keymap_space,
   }
 
   whichkey.setup(conf)
