@@ -19,6 +19,9 @@ return require('packer').startup(function()
   -- Packer manages itself
   use 'wbthomason/packer.nvim'
 
+  -- TODO: Git blame tool
+  -- use { 'APZelos/blamer.nvim' }
+
   -- Status line
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
