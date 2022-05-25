@@ -26,6 +26,7 @@ function M.setup()
     F = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
     c = { "<cmd>Telescope commands<cr>", "Commands" },
     r = { "<cmd>Telescope lsp_references<cr>", "References" },
+    n = { "<cmd>Telescope resume<cr>", "Resume" },
     w = { "<cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>", "Current Buffer" },
   }
 
