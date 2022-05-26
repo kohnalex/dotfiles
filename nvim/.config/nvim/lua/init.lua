@@ -26,6 +26,14 @@ return require('packer').startup(function()
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
 
+  -- Github Copilot
+  use {
+    'github/copilot.vim',
+    config = function()
+      require('config.copilot').setup()
+    end
+  }
+
   -- Colorschemes
   use 'morhetz/gruvbox'
   use 'dracula/vim'
