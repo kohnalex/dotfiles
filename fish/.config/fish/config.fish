@@ -36,9 +36,9 @@ if test -d ~/Library/Jetbrains/bin
     fish_add_path ~/Library/Jetbrains/bin
 end
 
-if test -d opt/homebrew/opt/node@14/bin
-    fish_add_path /opt/homebrew/opt/node@14/bin
-end
+# if test -d opt/homebrew/opt/node@14/bin
+# fish_add_path /opt/homebrew/opt/node@14/bin
+# end
 
 # JAVA
 if test -d /usr/local/opt/openjdk@11/bin
