@@ -51,6 +51,7 @@ function M.setup()
     j = { "<cmd>wincmd j<cr>", "Switch down" },
     k = { "<cmd>wincmd k<cr>", "Switch up" },
     l = { "<cmd>wincmd l<cr>", "Switch right" },
+    c = { "<cmd>bd!<CR>", "Close" }
   }
 
   -- DEFAULT
@@ -77,10 +78,6 @@ function M.setup()
 
   local keymap = {
     e = { "<cmd> NvimTreeFocus <CR>", "focus nvimtree" },
-    b = {
-      name = "Buffer",
-      c = { "<cmd>bd!<CR>", "Close current buffer" }
-    },
     p = keymap_p,
     f = keymap_f,
     g = keymap_g,
