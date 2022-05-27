@@ -14,13 +14,15 @@ packer.init {
   }
 }
 
+-- TODO:
+-- Git blame tool: APZelos/blamer.nvim
+-- LspSga
+-- Sneak
+
 -- Plugin registration
 return require('packer').startup(function()
   -- Packer manages itself
   use 'wbthomason/packer.nvim'
-
-  -- TODO: Git blame tool
-  -- use { 'APZelos/blamer.nvim' }
 
   -- Status line
   use {
@@ -61,7 +63,6 @@ return require('packer').startup(function()
   -- Tpope goodies
   use 'tpope/vim-commentary'
   use 'tpope/vim-sleuth'
-  use 'tpope/vim-surround'
 
   -- Better highlighting and parsing
   use {
@@ -90,6 +91,7 @@ return require('packer').startup(function()
   }
 
 
+  -- File tree
   use {
     "kyazdani42/nvim-tree.lua",
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },

@@ -56,6 +56,10 @@ function M.setup()
 end
 
 function M.keymap()
+  local ok, whichkey = pcall(require, "which-key")
+  if not ok then return end
+
+  -- Leader mappings
   local opts = {
     mode = "n", -- normal mode
     prefix = "<leader>",
@@ -64,7 +68,6 @@ function M.keymap()
     noremap = true, -- use 'noremapt' when creating keymaps
     nowait = false, -- use 'nowait' when creating keymaps
   }
-
   local keymap = {
     x = {
       name = "Trouble",
@@ -73,11 +76,21 @@ function M.keymap()
       d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Document diagnostics" },
     }
   }
-
-  local ok, whichkey = pcall(require, "which-key")
-  if not ok then return end
-
   whichkey.register(keymap, opts)
+
+  -- G Mapings
+  local g_opts = {
+    mode = "n", -- normal mode
+    prefix = "g",
+    buffer = nil, -- Global mappings. Specify a buffer for buffer local mappings
+    silent = true, -- use 'silent' when creating keymaps
+    noremap = true, -- use 'noremapt' when creating keymaps
+    nowait = false, -- use 'nowait' when creating keymaps
+  }
+  local g_keymap = {
+    r = { "<cmd>TroubleToggle lsp_references<cr>", "References" }
+  }
+  whichkey.register(g_keymap, g_opts)
 end
 
 return M
