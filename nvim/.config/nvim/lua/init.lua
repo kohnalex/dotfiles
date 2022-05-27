@@ -23,8 +23,12 @@ return require('packer').startup(function()
   -- use { 'APZelos/blamer.nvim' }
 
   -- Status line
-  use 'vim-airline/vim-airline'
-  use 'vim-airline/vim-airline-themes'
+  use {
+    'nvim-lualine/lualine.nvim',
+    config = function()
+      require('config.lualine').setup()
+    end
+  }
 
   -- Github Copilot
   use {
