@@ -30,6 +30,14 @@ return require('packer').startup(function()
     end
   }
 
+  -- Trouble
+  use {
+    'folke/trouble.nvim',
+    config = function()
+      require('config.trouble').setup()
+    end
+  }
+
   -- Github Copilot
   use {
     'github/copilot.vim',
