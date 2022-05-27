@@ -39,14 +39,15 @@ function M.setup()
     S = { "<cmd>Telescope git_stash<cr>", "Stash" },
   }
 
-  local keymap_p = {
-    name = "Project",
-    p = { "<cmd>lua require'telescope'.extensions.project.project{}<cr>", "List" },
-    s = { "<cmd>Telescope repo list<cr>", "Search" },
-  }
+  -- local keymap_p = {
+  --   name = "Project",
+  --   p = { "<cmd>lua require'telescope'.extensions.project.project{}<cr>", "List" },
+  --   s = { "<cmd>Telescope repo list<cr>", "Search" },
+  -- }
 
   -- PANES
   local keymap_space = {
+    name = "Buffer",
     h = { "<cmd>wincmd h<cr>", "Switch left" },
     j = { "<cmd>wincmd j<cr>", "Switch down" },
     k = { "<cmd>wincmd k<cr>", "Switch up" },
@@ -78,7 +79,7 @@ function M.setup()
 
   local keymap = {
     e = { "<cmd> NvimTreeFocus <CR>", "focus nvimtree" },
-    p = keymap_p,
+    -- p = keymap_p,
     f = keymap_f,
     g = keymap_g,
     ["<space>"] = keymap_space,
