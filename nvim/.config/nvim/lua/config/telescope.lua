@@ -10,10 +10,9 @@ function M.setup()
 
   telescope.setup {
     defaults = {
-
-    prompt_prefix = " ",
-    selection_caret = " ",
-    path_display = { "smart" },
+      prompt_prefix = " ",
+      selection_caret = " ",
+      path_display = { "smart" },
 
       mappings = {
         i = {
@@ -95,8 +94,13 @@ function M.setup()
       --   extension_config_key = value,
       -- }
       -- please take a look at the readme of the extension you want to configure
+      ["ui-select"] = {
+        require("telescope.themes").get_dropdown()
+      }
     },
   }
+
+  telescope.load_extension("ui-select")
 end
 
 return M

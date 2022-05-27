@@ -118,6 +118,7 @@ return require('packer').startup(function()
     requires = {
       "nvim-lua/plenary.nvim",
       "kyazdani42/nvim-web-devicons",
+      "nvim-telescope/telescope-ui-select.nvim",
     },
     config = function()
       require("config.telescope").setup()
