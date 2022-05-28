@@ -58,7 +58,12 @@ return require('packer').startup(function()
   use 'cohama/lexima.vim'
 
   -- Git status annotation in buffer
-  use 'mhinz/vim-signify'
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require("config.gitsigns").setup()
+    end
+  }
 
   -- Tpope goodies
   use 'tpope/vim-commentary'
