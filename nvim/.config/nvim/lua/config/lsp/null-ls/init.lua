@@ -20,7 +20,7 @@ end
 
 local sources = {
   -- formatting
-  b.formatting.prettierd,
+  with_root_file(b.formatting.prettierd, ".prettierrc.json"),
   b.formatting.shfmt,
   b.formatting.fixjson,
   b.formatting.black.with { extra_args = { "--fast" } },
