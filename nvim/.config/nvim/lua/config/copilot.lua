@@ -9,4 +9,7 @@ function M.setup()
   -- vim.api.nvim_set_keymap("i", "<C-@>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 end
 
+function M.keymap()
+end
+
 return M
