@@ -9,7 +9,7 @@ font:
   italic:
     family: MesloLGS NF
     style: Italic
-  size: 14.0
+  size: 12.0
 
 window:
   decorations: Buttonless
