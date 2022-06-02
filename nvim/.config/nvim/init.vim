@@ -19,6 +19,7 @@ set hidden
 set nobackup
 set nowritebackup
 set exrc
+set autoread
 
 set hlsearch
 set incsearch
