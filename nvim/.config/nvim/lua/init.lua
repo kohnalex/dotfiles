@@ -16,7 +16,6 @@ packer.init {
 
 -- TODO:
 -- Git blame tool: APZelos/blamer.nvim
--- LspSga
 -- Sneak
 
 -- Plugin registration
@@ -53,6 +52,7 @@ return require('packer').startup(function()
   use 'dracula/vim'
   use 'sainnhe/everforest'
   use 'nlknguyen/papercolor-theme'
+  use 'catppuccin/nvim'
 
   -- Auto closing brackets, spaces, etc.
   use 'cohama/lexima.vim'
