@@ -8,9 +8,22 @@ function M.setup()
 
   local actions = require "telescope.actions"
 
+  local function open_with_trouble()
+    local trouble_ok, trouble = pcall(require, "trouble.providers.telescope")
+    if trouble_ok then
+      return function(bufnr, mode)
+        trouble.open_with_trouble(bufnr, mode)
+      end
+    else
+      return function()
+        print "trouble not ok"
+      end
+    end
+  end
+
   telescope.setup {
     defaults = {
-      prompt_prefix = " ",
+      prompt_prefix = "  ",
       selection_caret = " ",
       path_display = { "smart" },
 
@@ -32,7 +45,8 @@ function M.setup()
           ["<CR>"] = actions.select_default,
           ["<C-x>"] = actions.select_horizontal,
           ["<C-v>"] = actions.select_vertical,
-          ["<C-t>"] = actions.select_tab,
+          -- ["<C-t>"] = actions.select_tab,
+          ["<C-t>"] = open_with_trouble(),
 
           ["<C-u>"] = actions.preview_scrolling_up,
           ["<C-d>"] = actions.preview_scrolling_down,
@@ -53,7 +67,10 @@ function M.setup()
           ["<CR>"] = actions.select_default,
           ["<C-x>"] = actions.select_horizontal,
           ["<C-v>"] = actions.select_vertical,
-          ["<C-t>"] = actions.select_tab,
+          -- ["<C-t>"] = actions.select_tab,
+          ["<C-t>"] = function(prompt_bufnr, _mode)
+            require("trouble.providers.telescope").open_with_trouble(prompt_bufnr, _mode)
+          end,
 
           ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
           ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,

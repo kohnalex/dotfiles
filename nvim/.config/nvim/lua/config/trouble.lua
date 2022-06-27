@@ -12,8 +12,6 @@ function M.setup()
     mode = "workspace_diagnostics", -- "workspace_diagnostics", "document_diagnostics", "quickfix", "lsp_references", "loclist"
     fold_open = "-", -- icon used for open folds
     fold_closed = "+", -- icon used for closed folds
-    -- fold_open = "", -- icon used for open folds
-    -- fold_closed = "", -- icon used for closed folds
     group = true, -- group results by file
     padding = true, -- add an extra new line on top of the list
     action_keys = { -- key mappings for actions in the trouble list
