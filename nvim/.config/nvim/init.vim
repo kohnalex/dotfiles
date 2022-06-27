@@ -3,7 +3,6 @@ lua require 'init'
 " Color scheme & style
 let g:dracula_colorterm = 0
 set bg=dark
-colorscheme dracula
 let g:airline_powerline_fonts=1
 
 " Tabs und co configs
@@ -36,6 +35,7 @@ if exists('g:neovide')
   colorscheme papercolor
   set bg=light
 else
-  colorscheme dracula
+  let g:catppuccin_flavour = "macchiato"
+  colorscheme catppuccin
 endif
 
