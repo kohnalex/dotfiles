@@ -41,12 +41,12 @@ return require('packer').startup(function()
   }
 
   -- Github Copilot
-  use {
-    'github/copilot.vim',
-    config = function()
-      require('config.copilot').setup()
-    end
-  }
+  -- use {
+  --   'github/copilot.vim',
+  --   config = function()
+  --     require('config.copilot').setup()
+  --   end
+  -- }
 
   -- Colorschemes
   use 'morhetz/gruvbox'
