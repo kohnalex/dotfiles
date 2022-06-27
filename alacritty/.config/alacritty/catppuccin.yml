@@ -1,20 +1,3 @@
-alt_send_esc: false
-font:
-  normal:
-    family: MesloLGS NF
-    style: Regular
-  bold:
-    family: MesloLGS NF
-    style: Bold
-  italic:
-    family: MesloLGS NF
-    style: Italic
-  size: 13.0
-
-window:
-  decorations: Buttonless
-  opacity: 1.00
-
 color_schemes:
   latte: &latte
     # Default colors
