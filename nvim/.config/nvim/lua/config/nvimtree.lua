@@ -61,7 +61,7 @@ local options = {
   },
   view = {
     side = "left",
-    width = 25,
+    width = 35,
     hide_root_folder = true,
   },
   git = {
