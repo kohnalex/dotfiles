@@ -18,7 +18,7 @@ end
 ###
 set fish_greeting
 # set theme_color_scheme terminal-dark
-set theme_color_scheme terminal2
+set theme_color_scheme terminal
 
 ###
 ### ADD PATH
