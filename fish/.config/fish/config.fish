@@ -81,9 +81,15 @@ if type -q git
   abbr gf "git fetch"
   abbr gfa "git fetch --all"
 end
+
+### LAZYGIT
 if type -q lazygit
   abbr lg "lazygit"
 end
+
+### TMUX
+abbr t "tmux"
+abbr ta "tmux attach"
 
 ### EXA
 if type -q exa
@@ -97,7 +103,6 @@ if type -q exa
 end
 
 ### CD
-
 alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
@@ -114,31 +119,6 @@ end
 
 ### FZF
 if type -q fzf
-	alias fff='fd . --hidden | fzf --preview "bat {-1} --color=always"'
-	alias ffcat='fff | xargs bat'
-
-	# Search for file and open with vim
-	function ffv
-		set tmpvar (fff)
-		if test -n "$tmpvar"
-			vim $tmpvar
-		end
-		
-		# clear variables
-		set -e tmpvar
-	end
-
-
-	function ffdiff
-		set preview "git diff $argv --color=always -- {-1}"
-		# if type -q bat 
-		# 	set preview "bat"
-		# end
-		git diff $argv --name-only --relative | fzf -m --ansi --preview $preview
-
-		set -e preview
-	end
-
     function ff
         cd (fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview") && pwd && tree -a -C -L 1
     end
@@ -153,23 +133,4 @@ alias :q="exit"
 
 alias vion="fish_vi_key_bindings"
 alias vioff="fish_default_key_bindings"
-
-# Create directory and cd into
-function mdc
-    mkdir -p -- "$1" &&
-    cd -P -- "$1"
-end
-
-### TMUX
-abbr t "tmux"
-abbr ta "tmux attach"
-
-### DOCKER
-alias dockervm='docker run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh'
-alias dockerbash='docker_exec_bash'
-
-# Execute bash(!) shell on given container
-function docker_exec_bash
-	docker exec -it "$1" /bin/bash
-end
 
