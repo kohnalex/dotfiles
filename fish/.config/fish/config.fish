@@ -18,7 +18,7 @@ end
 ###
 set fish_greeting
 # set theme_color_scheme terminal-dark
-set theme_color_scheme dracula
+set theme_color_scheme terminal2
 
 ###
 ### ADD PATH
