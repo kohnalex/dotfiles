@@ -30,6 +30,7 @@ local opts = {
 
 function M.setup()
   require("config.lsp.installer").setup(servers, opts)
+  require("config.lsp.null-ls").setup(opts)
 end
 
 return M
