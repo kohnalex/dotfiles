@@ -125,6 +125,7 @@ if type -q fzf
 end
 
 ### MISC
+abbr gw './gradlew'
 alias cdc="cd ~/Documents/Code"
 alias md="mkdir"
 alias khnlx="ssh khnlx@h2888247.stratoserver.net"
