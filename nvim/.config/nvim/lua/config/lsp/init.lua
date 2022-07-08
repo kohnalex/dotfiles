@@ -6,6 +6,7 @@ local servers = {
   tsserver = {},
   eslint = {},
   jdtls = {},
+  prismals = {},
 }
 
 local function on_attach(client, bufnr)
