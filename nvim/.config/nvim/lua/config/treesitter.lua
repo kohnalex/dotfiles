@@ -25,6 +25,7 @@ function M.setup()
       "dockerfile",
       "c",
       "cpp",
+      "prisma",
     },
     highlight = {
       enable = true,
