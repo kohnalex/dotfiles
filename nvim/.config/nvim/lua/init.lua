@@ -40,6 +40,15 @@ return require('packer').startup(function()
     end
   }
 
+  -- hop.nvim
+  use {
+  'phaazon/hop.nvim',
+  branch = 'v2',
+  config = function()
+    require("config.hop").setup()
+  end
+}
+
   -- Github Copilot
   -- use {
   --   'github/copilot.vim',
