@@ -1,17 +1,20 @@
 alt_send_esc: false
 font:
   normal:
-    family: MesloLGS NF
+    # family: MesloLGS NF
+    family: FantasqueSansMono Nerd Font Mono 
     style: Regular
   bold:
-    family: MesloLGS NF
+    # family: MesloLGS NF
+    family: FantasqueSansMono Nerd Font Mono 
     style: Bold
   italic:
-    family: MesloLGS NF
+    # family: MesloLGS NF
+    family: FantasqueSansMono Nerd Font Mono 
     style: Italic
-  size: 13.0
+  size: 14.0
   offset:
-    y: 1
+    y: 2
 
 window:
   decorations: Buttonless
