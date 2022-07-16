@@ -10,6 +10,8 @@ font:
     family: MesloLGS NF
     style: Italic
   size: 13.0
+  offset:
+    y: 1
 
 window:
   decorations: Buttonless
