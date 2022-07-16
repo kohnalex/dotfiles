@@ -10,8 +10,12 @@ end
 function M.setup()
   local conf = {
     window = {
-      border = "single", --single, double, shadow, none
+      border = "none", --single, double, shadow, none
       position = "bottom"
+    },
+    icons = {
+      separator = ">",
+      group = "·",
     }
   }
 
