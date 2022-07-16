@@ -14,7 +14,7 @@ font:
     style: Italic
   size: 14.0
   offset:
-    y: 2
+    y: 0
 
 window:
   decorations: Buttonless
