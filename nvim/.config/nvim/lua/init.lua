@@ -16,8 +16,7 @@ packer.init {
 
 -- TODO:
 -- Git blame tool: APZelos/blamer.nvim
--- Sneak
--- fFtT jumps
+-- Lspsaga setup
 
 -- Plugin registration
 return require('packer').startup(function()
