@@ -124,6 +124,14 @@ return require('packer').startup(function()
     },
   }
 
+  use {
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    config = function()
+      require("config.lsp.lspsaga").setup()
+    end
+  }
+
   -- Telescope
   use {
     "nvim-telescope/telescope.nvim",
