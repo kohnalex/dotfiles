@@ -72,6 +72,7 @@ if type -q git
 
   abbr gco "git checkout"
   abbr gco! "git checkout -- ."
+  abbr gcob "git checkout -b"
 
   abbr gp "git push"
   abbr gp! "git push --force"
