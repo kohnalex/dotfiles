@@ -31,6 +31,13 @@ return require('packer').startup(function()
     end
   }
 
+  use {
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end
+  }
+
   -- Trouble
   use {
     'folke/trouble.nvim',
