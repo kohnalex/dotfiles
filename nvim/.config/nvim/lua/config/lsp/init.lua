@@ -8,6 +8,7 @@ local servers = {
   jdtls = {},
   prismals = {},
   volar = {},
+  tailwindcss = {},
 }
 
 local function on_attach(client, bufnr)
