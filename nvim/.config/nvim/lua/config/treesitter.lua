@@ -8,7 +8,11 @@ function M.setup()
   end
 
   configs.setup {
+    incremental_selection = {
+      enable = false
+    },
     ensure_installed = {
+      "jsdoc",
       "typescript",
       "javascript",
       "vue",
