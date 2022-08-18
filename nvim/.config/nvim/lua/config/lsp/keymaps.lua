@@ -19,7 +19,9 @@ local function keymappings(client, bufnr)
   local keymap_l = {
     l = {
       name = "Code",
-      r = { "<cmd>lua vim.lsp.buf.rename()<CR>", "Rename" },
+      -- TODO: Does not really belong here
+      r = { "<cmd>Lspsaga lsp_finder<CR>", "Lsp finder" },
+      R = { "<cmd>Lspsaga rename<CR>", "Rename" },
       a = { "<cmd>lua vim.lsp.buf.code_action()<CR>", "Code Action" },
       d = { "<cmd>lua vim.diagnostic.open_float()<CR>", "Line Diagnostics" },
       i = { "<cmd>LspInfo<CR>", "Lsp Info" },
