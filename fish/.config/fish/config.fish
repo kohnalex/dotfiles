@@ -26,6 +26,9 @@ set theme_color_scheme terminal
 ###
 ### ADD PATH
 ###
+if test -d (brew --prefix nvm)
+    bass source (brew --prefix nvm)/nvm.sh
+end
 
 # TODO: do better solution
 if test -d /usr/libexec/java_home
