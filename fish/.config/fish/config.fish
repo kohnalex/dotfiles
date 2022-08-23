@@ -11,6 +11,9 @@ if status is-interactive
 	  # set homebrew path environment
 	  eval (/opt/homebrew/bin/brew shellenv)
     end
+    if test -d /home/linuxbrew/.linuxbrew/bin
+        eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    end
 end
 
 ###
@@ -25,8 +28,9 @@ set theme_color_scheme terminal
 ###
 
 # TODO: do better solution
-set -x XDG_CONFIG_HOME $HOME/.config
-set -x JAVA_HOME (/usr/libexec/java_home -v 11)
+if test -d /usr/libexec/java_home
+    set -x JAVA_HOME (/usr/libexec/java_home -v 11)
+end
 
 if test -d /Users/alex/.local/bin/JetBrains
     fish_add_path /Users/alex/.local/bin/JetBrains
