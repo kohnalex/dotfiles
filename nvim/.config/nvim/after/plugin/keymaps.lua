@@ -25,6 +25,7 @@ keymap("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>", default_opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", default_opts)
 keymap("x", "J", ":move '>+1<CR>gv-gv", default_opts)
 
+keymap("n", "<C-A>", "ggVG", default_opts)
 
 -- TODO: Maybe later...
 
