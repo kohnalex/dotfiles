@@ -115,11 +115,25 @@ function M.setup()
       -- please take a look at the readme of the extension you want to configure
       ["ui-select"] = {
         require("telescope.themes").get_dropdown()
-      }
+      },
+      file_browser = {
+        theme = "ivy",
+        -- disables netrw and use telescope-file-browser in its place
+        hijack_netrw = true,
+        mappings = {
+          ["i"] = {
+            -- your custom insert mode mappings
+          },
+          ["n"] = {
+            -- your custom normal mode mappings
+          },
+        },
+      },
     },
   }
 
   telescope.load_extension("ui-select")
+  telescope.load_extension("file_browser")
 end
 
 return M

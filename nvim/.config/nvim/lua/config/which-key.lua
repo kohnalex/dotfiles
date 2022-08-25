@@ -24,7 +24,8 @@ function M.setup()
   local keymap_f = {
     name = "Find",
     f = { "<cmd>lua require('utils.finder').find_files()<cr>", "Files" },
-    b = { "<cmd>Telescope buffers<cr>", "Buffers" },
+    B = { "<cmd>Telescope buffers<cr>", "Buffers" },
+    b = { "<cmd>Telescope file_browser<cr>", "Buffers" },
     h = { "<cmd>Telescope help_tags<cr>", "Help" },
     o = { "<cmd>Telescope oldfiles<cr>", "Old Files" },
     F = { "<cmd>Telescope live_grep<cr>", "Live Grep" },
