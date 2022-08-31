@@ -21,6 +21,8 @@ opt.signcolumn = "yes" -- Always show sign column
 opt.clipboard = "unnamedplus" -- Access system clipboard
 opt.timeoutlen = 300 --	Time in milliseconds to wait for a mapped sequence to complete.
 
+vim.diagnostic.config({virtual_text = false}) -- Disable inline diagnostics
+
 -- Highlight on yank
 vim.cmd [[
   augroup YankHighlight
