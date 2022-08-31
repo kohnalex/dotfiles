@@ -3,12 +3,12 @@ local M = {}
 local servers = {
   pyright = {},
   sumneko_lua = {},
-  tsserver = {},
   eslint = {},
   jdtls = {},
   prismals = {},
   volar = {},
   tailwindcss = {},
+  -- tsserver = {},
 }
 
 local function on_attach(client, bufnr)
@@ -22,6 +22,7 @@ local function on_attach(client, bufnr)
 
   -- Configure key mappings
   require("config.lsp.keymaps").setup(client, bufnr)
+
 end
 
 local opts = {
@@ -31,8 +32,18 @@ local opts = {
   },
 }
 
+local lsp_config = require("lspconfig")
+local tsOpts = {
+  on_attach = on_attach,
+  flags = {
+    debounce_text_changes = 150,
+  },
+  root_dir = lsp_config.util.root_pattern('package.json');
+}
+
 function M.setup()
   require("config.lsp.installer").setup(servers, opts)
+  require("config.lsp.installer").setup({ tsserver = {} }, tsOpts)
   require("config.lsp.null-ls").setup(opts)
 end
 
