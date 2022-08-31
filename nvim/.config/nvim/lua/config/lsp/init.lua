@@ -7,7 +7,7 @@ local servers = {
   jdtls = {},
   prismals = {},
   volar = {},
-  tailwindcss = {},
+  -- tailwindcss = {},
   -- tsserver = {},
 }
 
