@@ -90,6 +90,9 @@ if type -q git
   abbr gfa "git fetch --all"
 end
 
+### AEROFOILS
+abbr idf ". $HOME/esp/esp-idf/export.fish"
+
 ### LAZYGIT
 if type -q lazygit
   abbr lg "lazygit"
