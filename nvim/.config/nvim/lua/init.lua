@@ -31,21 +31,6 @@ return require('packer').startup(function()
     end
   }
 
-  use {
-    'windwp/nvim-ts-autotag',
-    config = function()
-      require('nvim-ts-autotag').setup()
-    end
-  }
-
-  -- Trouble
-  use {
-    'folke/trouble.nvim',
-    config = function()
-      require('config.trouble').setup()
-    end
-  }
-
   -- hop.nvim
   use {
     'phaazon/hop.nvim',
@@ -74,6 +59,7 @@ return require('packer').startup(function()
   }
 
   -- Tpope goodies
+  -- TODO: replace
   use 'tpope/vim-commentary'
   use 'tpope/vim-sleuth'
 
@@ -103,7 +89,6 @@ return require('packer').startup(function()
     end,
   }
 
-
   -- File tree
   use {
     "kyazdani42/nvim-tree.lua",
@@ -112,7 +97,6 @@ return require('packer').startup(function()
       require("config.nvimtree")
     end
   }
-
 
   -- LSP and LSP installer
   use {
@@ -130,6 +114,7 @@ return require('packer').startup(function()
     },
   }
 
+  -- LspSaga
   use {
     "glepnir/lspsaga.nvim",
     branch = "main",
@@ -148,6 +133,14 @@ return require('packer').startup(function()
     },
     config = function()
       require("config.telescope").setup()
+    end
+  }
+
+  -- Trouble
+  use {
+    'folke/trouble.nvim',
+    config = function()
+      require('config.trouble').setup()
     end
   }
 

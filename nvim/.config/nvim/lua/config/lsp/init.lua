@@ -5,7 +5,6 @@ local servers = {
   sumneko_lua = {},
   eslint = {},
   jdtls = {},
-  prismals = {},
   volar = {},
   -- tailwindcss = {},
   -- tsserver = {},

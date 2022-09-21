@@ -1,13 +1,10 @@
 local M = {}
 
 function M.setup()
-  local ok, configs = pcall(require, "nvim-treesitter.configs")
-  if not ok then
-    print "treesitter is not ok"
-    return
-  end
+  local ok, treesitter_configs = pcall(require, "nvim-treesitter.configs")
+  if not ok then return end
 
-  configs.setup {
+  treesitter_configs.setup {
     incremental_selection = {
       enable = false
     },
@@ -41,10 +38,6 @@ function M.setup()
       }
     }
   }
-
-  vim.opt.foldmethod = "expr"
-  vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-  vim.opt.foldlevel = 99
 end
 
 return M
