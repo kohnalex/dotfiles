@@ -6,6 +6,7 @@ local servers = {
   eslint = {},
   jdtls = {},
   volar = {},
+  ccls = {},
   -- tailwindcss = {},
   -- tsserver = {},
 }
