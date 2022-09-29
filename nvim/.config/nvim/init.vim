@@ -19,6 +19,7 @@ set nobackup
 set nowritebackup
 set exrc
 set autoread
+set cursorline
 
 set hlsearch
 set incsearch
