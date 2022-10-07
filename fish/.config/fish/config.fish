@@ -92,6 +92,7 @@ end
 
 ### AEROFOILS
 abbr idf ". $HOME/esp/esp-idf/export.fish"
+abbr ipy "idf.py"
 
 ### LAZYGIT
 if type -q lazygit
