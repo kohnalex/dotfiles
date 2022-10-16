@@ -5,8 +5,32 @@ local luasnip_ok, luasnip = pcall(require, 'luasnip')
 -- if not luasnip_ok then return end
 
 local kind_icons = {
-    -- TODO: Copy from backup config
-    -- find more here: https://www.nerdfonts.com/cheat-sheet
+    Text = "",
+    Method = "m",
+    Function = "",
+    Constructor = "",
+    Field = "",
+    Variable = "",
+    Class = "",
+    Interface = "",
+    Module = "",
+    Property = "",
+    Unit = "",
+    Value = "",
+    Enum = "",
+    Keyword = "",
+    Snippet = "",
+    Color = "",
+    File = "",
+    Reference = "",
+    Folder = "",
+    EnumMember = "",
+    Constant = "",
+    Struct = "",
+    Event = "",
+    Operator = "",
+    TypeParameter = "",
+    -- more here: https://www.nerdfonts.com/cheat-sheet
 }
 
 -- Better backspace for supertab
