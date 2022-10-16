@@ -28,12 +28,10 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", default_opts)
 -- Select entire file
 keymap("n", "<C-A>", "ggVG", default_opts)
 
--- TODO: Maybe later...
-
 -- Switch buffer
--- Description: We use <Shift-h> and <Shift-j> to navigate between the previous and next buffer
--- keymap("n", "<S-h>", ":bprevious<CR>", default_opts)
--- keymap("n", "<S-l>", ":bnext<CR>", default_opts)
+-- Description: We use <Shift-h> and <Shift-l> to navigate between the previous and next buffer
+keymap("n", "<S-h>", ":bprevious<CR>", default_opts)
+keymap("n", "<S-l>", ":bnext<CR>", default_opts)
 
 -- Resizing panes
 -- Description: Use arrow keys to resize the split window. Currently conflicting with mouse scrolling.
