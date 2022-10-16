@@ -140,7 +140,7 @@ end
 abbr gw './gradlew'
 abbr cdc 'cd ~/Documents/Code'
 abbr cdd 'cd ~/dotfiles'
-alias md="mkdir"
+abbr md 'mkdir'
 alias khnlx="ssh khnlx@h2888247.stratoserver.net"
 alias sfish="source ~/.config/fish/config.fish"
 alias :q="exit"
