@@ -12,7 +12,7 @@ mason_lsp.setup({
     ensure_installed = servers
 })
 
-local on_atatch = function(client, bufnr)
+local on_attach = function(client, bufnr)
     -- TODO: Setup on attach
 end
 
@@ -21,6 +21,6 @@ local lsp_flags = {
 }
 
 lspconfig['tsserver'].setup {
-    on_attach = on_atatch,
+    on_attach = on_attach,
     flags = lsp_flags
 }
