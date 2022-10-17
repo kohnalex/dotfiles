@@ -51,4 +51,4 @@ vim.cmd [[
 ]]
 
 -- TODO? Move to LSP
-vim.diagnostic.config({ virtual_text = false }) -- Disable inline diagnostics
+vim.diagnostic.config({ virtual_text = true }) -- Disable inline diagnostics

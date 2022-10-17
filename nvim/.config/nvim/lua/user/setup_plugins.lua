@@ -10,6 +10,12 @@ packer.startup(function(use)
     use 'nvim-treesitter/nvim-treesitter' -- Better highlight
     use 'catppuccin/nvim' -- Colortheme
 
+    -- LSP
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
+    use 'neovim/nvim-lspconfig'
+    use 'jose-elias-alvarez/null-ls.nvim' -- TODO: Setup
+
     -- Code completion
     use 'saadparwaiz1/cmp_luasnip' -- Snippet Engine. Required by cmp to run
     use 'hrsh7th/nvim-cmp' -- Main plugin
