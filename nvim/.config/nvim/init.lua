@@ -1,6 +1,7 @@
 require("user.setup_default_options")
 require("user.setup_default_keymaps")
 require("user.setup_plugins")
+require("user.setup_nvimtree")
 require("user.setup_treesitter")
 require("user.setup_colors")
 require("user.setup_cmp")
