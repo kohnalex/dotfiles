@@ -1,4 +1,4 @@
--- TODO: Very weird coloring going on with catppuccin recently..
+-- TODO: Cattpuccin and Treesitter provide weird coloring
 
 vim.opt.bg = "dark"
 vim.g.catppuccin_flavour = "macchiato"

@@ -1,5 +1,4 @@
-require("user.default_options")
-require("user.default_keymaps")
+require("user.defaults")
 require("user.plugins")
 require("user.nvimtree")
 require("user.treesitter")

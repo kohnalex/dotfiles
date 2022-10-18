@@ -23,7 +23,6 @@ opt.updatetime = 250 --Decrease update time
 opt.signcolumn = "yes" -- Always show sign column
 opt.clipboard = "unnamedplus" -- Access system clipboard
 opt.timeoutlen = 300 --	Time in milliseconds to wait for a mapped sequence to complete.
-opt.bg = "dark"
 opt.backspace = "indent,eol,start"
 opt.errorbells = false
 opt.scrolloff = 999
