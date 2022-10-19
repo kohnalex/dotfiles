@@ -2,13 +2,13 @@ local packer_ok, packer = pcall(require, 'packer')
 if not packer_ok then return end
 
 packer.startup(function(use)
+    -- Very Important
     use 'wbthomason/packer.nvim' -- Packer manages itself
-
-    use "nvim-lua/plenary.nvim" -- Plugin helper
-    use "kyazdani42/nvim-web-devicons" -- Nvim Icons
-
     use 'nvim-treesitter/nvim-treesitter' -- Better highlight
 
+    -- Misc
+    use "nvim-lua/plenary.nvim" -- Plugin helper
+    use "kyazdani42/nvim-web-devicons" -- Nvim Icons
     use 'catppuccin/nvim' -- Colortheme
     use 'kyazdani42/nvim-tree.lua' -- Nvim Tree
 

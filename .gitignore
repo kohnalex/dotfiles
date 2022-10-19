@@ -1,7 +1,9 @@
 *.bak
 *.tmp
 .luarc.json
+.vscode
 
 fish/.config/omf/bundle
 lazygit/.config/lazygit/state.yml
 nvim/.config/nvim/plugin/packer_compiled.lua
+
