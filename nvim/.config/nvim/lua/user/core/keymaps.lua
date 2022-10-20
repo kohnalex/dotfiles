@@ -22,7 +22,6 @@ keymap("v", ">", ">gv", default_opts)
 
 -- Paste over currently selected text without yanking it
 keymap("v", "p", '"_dP', default_opts)
-keymap("n", "x", '"_x', default_opts)
 
 -- Use +/- to increment/decrement itegers
 keymap("n", "+", "<C-a>", default_opts)
