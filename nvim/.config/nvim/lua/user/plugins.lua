@@ -13,6 +13,8 @@ packer.startup(function(use)
     use 'kyazdani42/nvim-tree.lua' -- Nvim Tree
     use 'lewis6991/gitsigns.nvim' -- Git status
     use 'tpope/vim-sleuth' -- Smart tabs & spaces
+    use 'tpope/vim-commentary' -- Quick code commenting
+    use 'tpope/vim-surround' -- Quick quote editing
 
     -- LSP
     use 'williamboman/mason.nvim'
