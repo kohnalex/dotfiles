@@ -19,11 +19,12 @@ packer.startup(function(use)
     use 'jose-elias-alvarez/null-ls.nvim' -- TODO: Setup
 
     -- Code completion
-    use 'saadparwaiz1/cmp_luasnip' -- Snippet Engine. Required by cmp to run
     use 'hrsh7th/nvim-cmp' -- Main plugin
     use 'hrsh7th/cmp-buffer' -- Buffer Completions
     use 'hrsh7th/cmp-path' -- Path Completions
     use 'hrsh7th/cmp-cmdline' -- Cmdline Completions
+	  use 'L3MON4D3/LuaSnip' -- snippet engine
     use 'hrsh7th/cmp-nvim-lsp' -- LSP Completions
+    use 'saadparwaiz1/cmp_luasnip' -- Snippet Engine. Required by cmp to run
     use 'rafamadriz/friendly-snippets' -- A collection of fine snippets
 end)

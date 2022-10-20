@@ -2,8 +2,15 @@ local cmp_ok, cmp = pcall(require, 'cmp')
 if not cmp_ok then return end
 
 local luasnip_ok, luasnip = pcall(require, 'luasnip')
--- TODO: CMP worksm but luasnip loads /w error...
--- if not luasnip_ok then return end
+if not luasnip_ok then return end
+
+local friendly_snippets_ok, friendly_snippets = pcall(require, 'luasnip.loaders.from_vscode')
+if not friendly_snippets_ok then return end
+
+-- load friendly snippets
+friendly_snippets.lazy_load()
+
+vim.opt.completeopt = "menu,menuone,noselect"
 
 local kind_icons = {
     Text = "",
@@ -61,7 +68,7 @@ cmp.setup {
         },
         -- Accept currently selected item. If none selected, `select` first item.
         -- Set `select` to `false` to only confirm explicitly selected items.
-        ["<CR>"] = cmp.mapping.confirm { select = true },
+        ["<CR>"] = cmp.mapping.confirm { select = false },
         ["<Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
