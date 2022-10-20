@@ -5,6 +5,23 @@ if not nvimtree_ok then return end
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
-nvimtree.setup()
+nvimtree.setup {
+renderer = {
+icons = {
+glyphs = {
+git = {
+deleted = "-",
+ignored = "i",
+renamed = "m",
+staged = "+",
+unmerged = "",
+unstaged = "~",
+untracked = "?",
+}
+}
+}
+}
+}
 
+-- Load keymap
 require("user.plugins.keymaps").setup_nvimtree_keymap()
