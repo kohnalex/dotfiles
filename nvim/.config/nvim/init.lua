@@ -1,4 +1,4 @@
-require("user.defaults")
+require("user.core")
 require("user.plugins")
 require("user.nvimtree")
 require("user.treesitter")
