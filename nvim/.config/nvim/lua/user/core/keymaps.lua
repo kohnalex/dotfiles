@@ -22,6 +22,11 @@ keymap("v", ">", ">gv", default_opts)
 
 -- Paste over currently selected text without yanking it
 keymap("v", "p", '"_dP', default_opts)
+keymap("n", "x", '"_x', default_opts)
+
+-- Use +/- to increment/decrement itegers
+keymap("n", "+", "<C-a>", default_opts)
+keymap("n", "-", "<C-x>", default_opts)
 
 -- Cancel search highlighting with ESC
 keymap("n", "<ESC>", ":nohlsearch<Bar>:echo<CR>", default_opts)
@@ -31,10 +36,21 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", default_opts)
 keymap("x", "J", ":move '>+1<CR>gv-gv", default_opts)
 
 -- Select entire file
-keymap("n", "<C-A>", "ggVG", default_opts)
+keymap("n", "<C-a>", "ggVG", default_opts)
 
--- Switch buffer
--- Description: We use <Shift-h> and <Shift-l> to navigate between the previous and next buffer
+-- Panes
+keymap("n", "<leader>sv", "<C-w>v", default_opts) -- Vertical split
+keymap("n", "<leader>sh", "<C-w>s", default_opts) -- Horizontal split
+keymap("n", "<leader>se", "<C-w>=", default_opts) -- Equalize pane sizes
+keymap("n", "<leader>sx", ":close<CR>", default_opts) -- Close pane
+
+-- Tabs
+keymap("n", "<leader>to", ":tabnew<CR>", default_opts) -- Open new tab
+keymap("n", "<leader>tx", ":tabclose<CR>", default_opts) -- Close tab
+keymap("n", "<leader>tn", ":tabn<CR>", default_opts) -- Next tab
+keymap("n", "<leader>tp", ":tabp<CR>", default_opts) -- Prev tab
+
+-- Use <Shift-h> and <Shift-l> to navigate between the previous and next buffer. Delete maybe...
 keymap("n", "<S-h>", ":bprevious<CR>", default_opts)
 keymap("n", "<S-l>", ":bnext<CR>", default_opts)
 
