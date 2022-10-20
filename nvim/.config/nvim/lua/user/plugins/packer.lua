@@ -18,6 +18,7 @@ packer.startup(function(use)
     use 'windwp/nvim-autopairs' -- autoclose parens, brackets, quotes, etc...
     use 'windwp/nvim-ts-autotag' -- autoclose tags
     use 'christoomey/vim-tmux-navigator' -- Seemless Vim and Tmux navigator
+    use 'nvim-lualine/lualine.nvim' -- Status line
 
     -- LSP
     use 'williamboman/mason.nvim'
