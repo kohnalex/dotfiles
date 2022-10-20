@@ -15,6 +15,7 @@ packer.startup(function(use)
     use 'tpope/vim-sleuth' -- Smart tabs & spaces
     use 'tpope/vim-commentary' -- Quick code commenting
     use 'tpope/vim-surround' -- Quick quote editing
+    use 'christoomey/vim-tmux-navigator' -- Seemless Vim and Tmux navigator
 
     -- LSP
     use 'williamboman/mason.nvim'
