@@ -1,0 +1,6 @@
+require("user.plugins.nvimtree")
+require("user.plugins.treesitter")
+require("user.plugins.colors")
+require("user.plugins.gitsigns")
+require("user.plugins.cmp")
+require("user.plugins.lsp")

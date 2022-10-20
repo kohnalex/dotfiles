@@ -1,8 +1,2 @@
 require("user.core")
 require("user.plugins")
-require("user.nvimtree")
-require("user.treesitter")
-require("user.colors")
-require("user.gitsigns")
-require("user.cmp")
-require("user.lsp")
