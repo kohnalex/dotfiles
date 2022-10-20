@@ -1,3 +1,4 @@
+require("user.plugins.packer")
 require("user.plugins.nvimtree")
 require("user.plugins.treesitter")
 require("user.plugins.colors")
