@@ -3,6 +3,11 @@ local keymap = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 local expr_opts = { noremap = true, expr = true, silent = true }
 
+-- Remap leader and local leader to <Space>
+keymap("", "<Space>", "<Nop>", default_opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Better escape using jk in insert and terminal mode
 keymap("t", "jk", "<C-\\><C-n>", default_opts)
 keymap("i", "jk", "<esc>", default_opts)
