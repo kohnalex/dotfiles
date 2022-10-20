@@ -6,3 +6,5 @@ vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
 nvimtree.setup()
+
+require("user.plugins.keymaps").setup_nvimtree_keymap()
