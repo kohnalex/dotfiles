@@ -11,5 +11,8 @@ lspsaga.init_lsp_saga {
 	},
 	definition_action_keys = {
 		edit = "<CR>"
+	},
+	code_action_lightbulb = {
+		enable = false
 	}
 }
