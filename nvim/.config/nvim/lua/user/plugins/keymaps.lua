@@ -8,7 +8,7 @@ local default_opts = { noremap = true, silent = true }
 
 -- Nvimtree
 function M.setup_nvimtree_keymap()
-  keymap("n", "<C-n>", ":NvimTreeToggle<CR>", default_opts)
+  keymap("n", "<leader>e", ":NvimTreeToggle<CR>", default_opts)
 end
 
 -- LSP
