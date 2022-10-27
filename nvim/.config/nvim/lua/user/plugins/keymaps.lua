@@ -12,7 +12,7 @@ function M.setup_nvimtree_keymap()
 end
 
 -- LSP
-function M.setup_lsp_keymap(client, bufnr)
+function M.setup_lsp_keymap(client, _)
   -- keybind options
   local opts = { noremap = true, silent = true}
 
@@ -29,6 +29,10 @@ function M.setup_lsp_keymap(client, bufnr)
   keymap("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
   keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+
+  if client.name == "tsserver" then
+    keymap("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts) -- File renaming
+  end
 end
 
 return M
