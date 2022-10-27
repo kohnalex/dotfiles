@@ -25,6 +25,9 @@ packer.startup(function(use)
     use 'williamboman/mason-lspconfig.nvim'
     use 'neovim/nvim-lspconfig'
     use 'jose-elias-alvarez/null-ls.nvim' -- TODO: Setup
+    use {'glepnir/lspsaga.nvim', branch = 'main'} -- Lspsaga
+    use 'jose-elias-alvarez/typescript.nvim' -- Better TypeScript integration
+    use 'onsails/lspkind.nvim' -- Lsp icons
 
     -- Code completion
     use 'hrsh7th/nvim-cmp' -- Main plugin
