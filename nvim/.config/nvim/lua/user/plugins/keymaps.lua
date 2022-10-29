@@ -1,4 +1,4 @@
--- Keymaps that are used by plugins go here 
+-- Keymaps that are used by plugins go here
 -- ->
 
 local M = {}
@@ -14,7 +14,7 @@ end
 -- LSP
 function M.setup_lsp_keymap(client, _)
   -- keybind options
-  local opts = { noremap = true, silent = true}
+  local opts = { noremap = true, silent = true }
 
   -- set keybinds
   keymap("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references

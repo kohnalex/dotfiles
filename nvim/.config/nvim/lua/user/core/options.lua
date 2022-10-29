@@ -27,18 +27,23 @@ opt.incsearch = true
 opt.laststatus = 3
 
 -- Buffer local
-bo.shiftwidth = 2
-bo.tabstop = 2
-bo.softtabstop = 2
+-- bo.shiftwidth = 2
+-- bo.tabstop = 2
+-- bo.softtabstop = 2
 bo.textwidth = 120
+bo.expandtab = true
+
+local f = function()
+  print("foo")
+end
 
 -- Highlight on yank
-vim.cmd [[
+vim.cmd([[
   augroup YankHighlight
     autocmd!
     autocmd TextYankPost * silent! lua vim.highlight.on_yank()
   augroup end
-]]
+]])
 
 -- TODO? Move to LSP
 vim.diagnostic.config({ virtual_text = true }) -- Disable inline diagnostics
