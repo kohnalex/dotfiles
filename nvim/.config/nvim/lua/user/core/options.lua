@@ -41,5 +41,4 @@ vim.cmd([[
   augroup end
 ]])
 
--- TODO? Move to LSP
 vim.diagnostic.config({ virtual_text = true }) -- Disable inline diagnostics
