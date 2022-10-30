@@ -1,5 +1,3 @@
--- Keymaps that are used by plugins go here
-
 local M = {}
 
 local keymap = vim.api.nvim_set_keymap
@@ -17,11 +15,9 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
   keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
   keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
-  -- keymap("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
-  keymap("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- see available code actions
-  keymap("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
-  keymap("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-  -- keymap("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
+  keymap("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- see available code actions
+  keymap("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
+  keymap("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
   keymap("n", "<C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
   keymap("n", "<C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
@@ -39,6 +35,7 @@ function M.setup_telescope_keymaps()
   keymap("n", "<leader>fc", ":Telescope grep_string<CR>", opts)
   keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
   keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
+  keymap("n", "<leader>fg", ":Telescope git_status<CR>", opts)
 end
 
 -- Hop
