@@ -33,10 +33,6 @@ opt.laststatus = 3
 bo.textwidth = 120
 bo.expandtab = true
 
-local f = function()
-  print("foo")
-end
-
 -- Highlight on yank
 vim.cmd([[
   augroup YankHighlight

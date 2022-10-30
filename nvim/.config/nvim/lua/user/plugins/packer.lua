@@ -44,6 +44,7 @@ packer.startup(function(use)
   use("rafamadriz/friendly-snippets") -- A collection of fine snippets
 
   -- Fuzzy finder
+  use("nvim-telescope/telescope-ui-select.nvim") -- telescope fancy ui select
   use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- use fzf as fuzzy finder
   use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- actual finder
 end)
