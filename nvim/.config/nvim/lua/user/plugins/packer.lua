@@ -19,6 +19,7 @@ packer.startup(function(use)
   use("windwp/nvim-ts-autotag") -- autoclose tags
   use("christoomey/vim-tmux-navigator") -- Seemless Vim and Tmux navigator
   use("nvim-lualine/lualine.nvim") -- Status line
+  use({ "phaazon/hop.nvim", branch = "v2" }) -- Faster motion
 
   -- LSP
   use("williamboman/mason.nvim")
