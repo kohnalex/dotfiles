@@ -41,4 +41,8 @@ packer.startup(function(use)
   use("hrsh7th/cmp-nvim-lsp") -- LSP Completions
   use("saadparwaiz1/cmp_luasnip") -- Snippet Engine. Required by cmp to run
   use("rafamadriz/friendly-snippets") -- A collection of fine snippets
+
+  -- Fuzzy finder
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- use fzf as fuzzy finder
+  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- actual finder
 end)

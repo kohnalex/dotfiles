@@ -31,7 +31,6 @@ mason_nls.setup({
 
 local on_attach = function(client, bufnr)
   require("user.plugins.keymaps").setup_lsp_keymap(client, bufnr)
-  -- TODO: Setup on attach
 end
 
 -- used to enable autocompletion (assign to every lsp server config)

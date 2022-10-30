@@ -1,21 +1,17 @@
 -- Keymaps that are used by plugins go here
--- ->
 
 local M = {}
 
 local keymap = vim.api.nvim_set_keymap
-local default_opts = { noremap = true, silent = true }
+local opts = { noremap = true, silent = true }
 
 -- Nvimtree
 function M.setup_nvimtree_keymap()
-  keymap("n", "<leader>e", ":NvimTreeToggle<CR>", default_opts)
+  keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 end
 
 -- LSP
 function M.setup_lsp_keymap(client, _)
-  -- keybind options
-  local opts = { noremap = true, silent = true }
-
   -- set keybinds
   keymap("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
   keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
@@ -33,6 +29,15 @@ function M.setup_lsp_keymap(client, _)
   if client.name == "tsserver" then
     keymap("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts) -- File renaming
   end
+end
+
+-- Telescope
+function M.setup_telescope_keymaps()
+  keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+  keymap("n", "<leader>fs", ":Telescope live_grep<CR>", opts)
+  keymap("n", "<leader>fc", ":Telescope grep_string<CR>", opts)
+  keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+  keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
 end
 
 return M
