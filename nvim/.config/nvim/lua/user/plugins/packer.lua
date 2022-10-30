@@ -20,6 +20,7 @@ packer.startup(function(use)
   use("christoomey/vim-tmux-navigator") -- Seemless Vim and Tmux navigator
   use("nvim-lualine/lualine.nvim") -- Status line
   use({ "phaazon/hop.nvim", branch = "v2" }) -- Faster motion
+  use("folke/which-key.nvim") -- Keymap hints
 
   -- LSP
   use("williamboman/mason.nvim")
