@@ -6,7 +6,7 @@ local diagnostics = nls.builtins.diagnostics
 local code_actions = nls.builtins.code_actions
 
 local sources = {
-  formatting.prettierd,
+  -- formatting.prettierd,
   formatting.prettier,
   formatting.stylua,
   diagnostics.flake8,
