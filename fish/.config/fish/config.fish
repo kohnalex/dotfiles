@@ -58,6 +58,7 @@ end
 ### VIM
 if type -q nvim
 	alias vim=(which nvim)
+	alias vi=(which nvim)
 	set -Ux EDITOR (which nvim)
 end
 if type -q neovide
