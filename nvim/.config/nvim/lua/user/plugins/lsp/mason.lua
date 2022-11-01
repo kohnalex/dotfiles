@@ -19,7 +19,7 @@ function M.setup_mason_nls()
     ensure_installed = {
       "flake8",
       -- "prettierd",
-      "prettier",
+      -- "prettier",
       "stylua",
       "eslint_d",
     },

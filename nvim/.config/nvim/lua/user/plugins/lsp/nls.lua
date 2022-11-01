@@ -7,7 +7,7 @@ local code_actions = nls.builtins.code_actions
 
 local sources = {
   -- formatting.prettierd,
-  formatting.prettier,
+  -- formatting.prettier,
   formatting.stylua,
   diagnostics.flake8,
   diagnostics.eslint_d,
