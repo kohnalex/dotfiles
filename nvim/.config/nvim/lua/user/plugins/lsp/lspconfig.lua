@@ -18,6 +18,17 @@ lspconfig["pyright"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["clangd"].setup({
+  cmd = {
+    "/Users/alex/Documents/Code/aerofoils/llvm-project/build/bin/clangd",
+    "--background-index",
+    "--query-driver=/Users/alex/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/**/bin/xtensa-esp32-elf-*",
+  },
+  root_dir = lspconfig.util.root_pattern("build/compile_commands.json", ".git"),
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 lspconfig["sumneko_lua"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
