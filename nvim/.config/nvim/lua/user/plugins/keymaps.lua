@@ -23,6 +23,7 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "<C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
   keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+  keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts) -- format code
 
   if client.name == "tsserver" then
     keymap("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts) -- File renaming
