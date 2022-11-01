@@ -148,4 +148,5 @@ alias :q="exit"
 
 alias vion="fish_vi_key_bindings"
 alias vioff="fish_default_key_bindings"
+vion
 
