@@ -25,6 +25,7 @@ opt.autoread = true
 opt.cursorline = true
 opt.incsearch = true
 opt.laststatus = 3
+opt.guifont = "FantasqueSansMono Nerd Font Mono:h17"
 
 -- Buffer local
 -- bo.shiftwidth = 2
