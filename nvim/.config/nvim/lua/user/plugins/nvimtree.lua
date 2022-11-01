@@ -21,6 +21,9 @@ nvimtree.setup({
       },
     },
   },
+  update_focused_file = {
+    enable = true,
+  },
 })
 
 -- Load keymap
