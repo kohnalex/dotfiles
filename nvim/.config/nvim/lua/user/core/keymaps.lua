@@ -37,17 +37,11 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", default_opts)
 -- Select entire file
 keymap("n", "<C-a>", "ggVG", default_opts)
 
--- Panes
-keymap("n", "<leader>sv", "<C-w>v", default_opts) -- Vertical split
-keymap("n", "<leader>sh", "<C-w>s", default_opts) -- Horizontal split
-keymap("n", "<leader>se", "<C-w>=", default_opts) -- Equalize pane sizes
-keymap("n", "<leader>sx", ":close<CR>", default_opts) -- Close pane
-
 -- Tabs
-keymap("n", "<leader>to", ":tabnew<CR>", default_opts) -- Open new tab
-keymap("n", "<leader>tx", ":tabclose<CR>", default_opts) -- Close tab
-keymap("n", "<leader>tn", ":tabn<CR>", default_opts) -- Next tab
-keymap("n", "<leader>tp", ":tabp<CR>", default_opts) -- Prev tab
+keymap("n", "<leader>sc", ":tabnew<CR>", default_opts) -- Open new tab
+keymap("n", "<leader>sx", ":tabclose<CR>", default_opts) -- Close tab
+keymap("n", "<leader>sn", ":tabn<CR>", default_opts) -- Next tab
+keymap("n", "<leader>sp", ":tabp<CR>", default_opts) -- Prev tab
 
 -- Use <Shift-h> and <Shift-l> to navigate between the previous and next buffer. Delete maybe...
 keymap("n", "<S-h>", ":bprevious<CR>", default_opts)
