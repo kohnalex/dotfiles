@@ -5,15 +5,16 @@ local formatting = nls.builtins.formatting
 local diagnostics = nls.builtins.diagnostics
 local code_actions = nls.builtins.code_actions
 
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-
 local sources = {
   formatting.prettierd,
+  formatting.prettier,
   formatting.stylua,
+  diagnostics.flake8,
   diagnostics.eslint_d,
   code_actions.gitsigns,
 }
 
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local on_attach = function(current_client, bufnr)
   if current_client.supports_method("textDocument/formatting") then
     vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
