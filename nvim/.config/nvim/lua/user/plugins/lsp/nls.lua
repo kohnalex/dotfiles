@@ -32,6 +32,10 @@ local on_attach = function(current_client, bufnr)
       end,
     })
   end
+
+  if current_client.supports_method("textDocument/codeAction") then
+    require("user.plugins.keymaps").setup_codeaction_keymap()
+  end
 end
 
 nls.setup({

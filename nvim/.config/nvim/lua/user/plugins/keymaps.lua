@@ -8,6 +8,11 @@ function M.setup_nvimtree_keymap()
   keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 end
 
+-- Code Actions
+function M.setup_codeaction_keymap()
+  keymap("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- see available code actions
+end
+
 -- LSP
 function M.setup_lsp_keymap(client, _)
   -- set keybinds
@@ -16,7 +21,6 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- goto definition
   keymap("n", "gD", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
   keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
-  keymap("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts) -- see available code actions
   keymap("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
   keymap("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
   keymap("n", "<C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
@@ -31,7 +35,8 @@ function M.setup_lsp_keymap(client, _)
 end
 
 -- Telescope
-function M.setup_telescope_keymaps()
+function M.setup_telescope_keymap()
+  -- TODO: open in trouble.nvim
   keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
   keymap("n", "<leader>fs", ":Telescope live_grep<CR>", opts)
   keymap("n", "<leader>fc", ":Telescope grep_string<CR>", opts)
@@ -41,7 +46,7 @@ function M.setup_telescope_keymaps()
 end
 
 -- Hop
-function M.setup_hop_keymaps()
+function M.setup_hop_keymap()
   keymap(
     "",
     "f",

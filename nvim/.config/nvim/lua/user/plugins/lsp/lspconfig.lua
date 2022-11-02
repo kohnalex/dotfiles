@@ -8,7 +8,9 @@ local typescript_ok, typescript = pcall(require, "typescript")
 if not typescript_ok then return end
 
 local on_attach = function(client, bufnr)
-  require("user.plugins.keymaps").setup_lsp_keymap(client, bufnr)
+  local keymaps = require("user.plugins.keymaps")
+  keymaps.setup_lsp_keymap(client, bufnr)
+  keymaps.setup_codeaction_keymap()
 end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
