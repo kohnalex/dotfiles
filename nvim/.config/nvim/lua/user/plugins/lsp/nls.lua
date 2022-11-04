@@ -9,9 +9,9 @@ local sources = {
   -- formatting.prettierd,
   -- formatting.prettier,
   formatting.stylua,
+  formatting.black.with({ extra_args = { "--fast" } }),
   diagnostics.flake8,
   diagnostics.eslint_d,
-  diagnostics.black,
   code_actions.gitsigns,
 }
 
