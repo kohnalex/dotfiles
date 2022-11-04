@@ -9,7 +9,7 @@ local sources = {
   -- formatting.prettierd,
   -- formatting.prettier,
   formatting.stylua,
-  formatting.black.with({ extra_args = { "--fast" } }),
+  formatting.black.with({ extra_args = { "--fast", "-l 80", "--preview" } }),
   diagnostics.flake8,
   diagnostics.eslint_d,
   code_actions.gitsigns,
