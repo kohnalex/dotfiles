@@ -11,6 +11,7 @@ local sources = {
   formatting.stylua,
   diagnostics.flake8,
   diagnostics.eslint_d,
+  diagnostics.black,
   code_actions.gitsigns,
 }
 

@@ -17,11 +17,15 @@ end
 function M.setup_mason_nls()
   mason_nls.setup({
     ensure_installed = {
+      -- Diagnostics
       "flake8",
+      "eslint_d",
       -- "prettierd",
       -- "prettier",
+
+      -- Foramtters
       "stylua",
-      "eslint_d",
+      "black",
     },
   })
 end

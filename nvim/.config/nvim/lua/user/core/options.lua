@@ -42,4 +42,4 @@ vim.cmd([[
   augroup end
 ]])
 
-vim.diagnostic.config({ virtual_text = true }) -- Disable inline diagnostics
+vim.diagnostic.config({ virtual_text = false }) -- Inline Diagnostics
