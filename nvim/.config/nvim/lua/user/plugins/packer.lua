@@ -10,6 +10,7 @@ packer.startup(function(use)
   use("nvim-lua/plenary.nvim") -- Plugin helper
   use("kyazdani42/nvim-web-devicons") -- Nvim Icons
   use("catppuccin/nvim") -- Colortheme
+  use("NLKNguyen/papercolor-theme") -- Colortheme
   use("kyazdani42/nvim-tree.lua") -- Nvim Tree
   use("lewis6991/gitsigns.nvim") -- Git status
   use("tpope/vim-sleuth") -- Smart tabs & spaces
