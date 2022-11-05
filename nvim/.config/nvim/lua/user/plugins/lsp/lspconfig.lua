@@ -20,6 +20,11 @@ lspconfig["pyright"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["gopls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 lspconfig["clangd"].setup({
   cmd = {
     "/Users/alex/Documents/Code/aerofoils/llvm-project/build/bin/clangd",

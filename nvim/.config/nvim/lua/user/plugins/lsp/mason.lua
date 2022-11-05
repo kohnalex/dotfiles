@@ -37,6 +37,7 @@ function M.setup_mason_lsp()
       "tsserver",
       "sumneko_lua",
       "pyright",
+      "gopls",
     },
   })
 end

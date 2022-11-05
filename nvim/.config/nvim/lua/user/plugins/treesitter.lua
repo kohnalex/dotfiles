@@ -24,6 +24,7 @@ treesitter.setup({
     "c",
     "cpp",
     "prisma",
+    "go",
   },
   highlight = {
     enable = true,
