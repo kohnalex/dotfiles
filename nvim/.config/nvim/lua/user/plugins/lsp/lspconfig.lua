@@ -25,6 +25,8 @@ lspconfig["gopls"].setup({
   on_attach = on_attach,
 })
 
+-- Make clangd to work with esp idf
+-- @see https://github.com/espressif/esp-idf/issues/6721
 lspconfig["clangd"].setup({
   cmd = {
     "/Users/alex/Documents/Code/aerofoils/llvm-project/build/bin/clangd",
