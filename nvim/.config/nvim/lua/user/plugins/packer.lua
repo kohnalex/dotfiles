@@ -2,11 +2,10 @@ local packer_ok, packer = pcall(require, "packer")
 if not packer_ok then return end
 
 packer.startup(function(use)
-  -- Very Important
   use("wbthomason/packer.nvim") -- Packer manages itself
-  use("nvim-treesitter/nvim-treesitter") -- Better highlight
 
   -- Misc
+  use("nvim-treesitter/nvim-treesitter") -- Better highlight
   use("nvim-lua/plenary.nvim") -- Plugin helper
   use("kyazdani42/nvim-web-devicons") -- Nvim Icons
   use("catppuccin/nvim") -- Colortheme
@@ -24,16 +23,14 @@ packer.startup(function(use)
   use("folke/which-key.nvim") -- Keymap hints
 
   -- LSP
-  use("williamboman/mason.nvim")
-  use("williamboman/mason-lspconfig.nvim")
-  use("neovim/nvim-lspconfig")
+  use("williamboman/mason.nvim") -- LSP Server manager
+  use("williamboman/mason-lspconfig.nvim") -- Mason-lspconfig helper
+  use("neovim/nvim-lspconfig") -- LSP Configuration
   use({ "glepnir/lspsaga.nvim", branch = "main" }) -- Lspsaga
   use("jose-elias-alvarez/typescript.nvim") -- Better TypeScript integration
   use("onsails/lspkind.nvim") -- Lsp icons
-
-  -- Formatting & Linting
-  use("jose-elias-alvarez/null-ls.nvim")
-  use("jayp0521/mason-null-ls.nvim")
+  use("jose-elias-alvarez/null-ls.nvim") -- formatting, linting, ...
+  use("jayp0521/mason-null-ls.nvim") -- Mason-Null-ls helper
 
   -- Code completion
   use("hrsh7th/nvim-cmp") -- Main plugin
@@ -47,6 +44,6 @@ packer.startup(function(use)
 
   -- Fuzzy finder
   use("nvim-telescope/telescope-ui-select.nvim") -- telescope fancy ui select
-  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- use fzf as fuzzy finder
-  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- actual finder
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- use fzf as fuzzyfinder engine
+  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- actual fuzzy finder
 end)
