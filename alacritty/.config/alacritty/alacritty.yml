@@ -542,4 +542,4 @@ color_schemes:
       - { index: 17, color: '#F5E0DC' }
 
 
-colors: *catppuccin-macchiato
+colors: *catppuccin-mocha
