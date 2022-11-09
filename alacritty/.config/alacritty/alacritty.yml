@@ -5,10 +5,10 @@ font:
     style: Regular
   bold:
     family: ComicCodeLigatures Nerd Font
-    style: Regular
+    style: Bold
   italic:
     family: ComicCodeLigatures Nerd Font
-    style: Regular
+    style: Italic
   size: 15.0
   offset:
     y: 0
