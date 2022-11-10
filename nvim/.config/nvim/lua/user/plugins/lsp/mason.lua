@@ -20,10 +20,9 @@ function M.setup_mason_nls()
       -- Diagnostics
       "flake8",
       "eslint_d",
-      -- "prettierd",
-      -- "prettier",
 
       -- Foramtters
+      "prettierd",
       "stylua",
       "black",
     },
