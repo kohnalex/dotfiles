@@ -28,9 +28,9 @@ opt.laststatus = 3
 opt.guifont = "FantasqueSansMono Nerd Font Mono:h17"
 
 -- Buffer local
--- bo.shiftwidth = 2
--- bo.tabstop = 2
--- bo.softtabstop = 2
+bo.shiftwidth = 2
+bo.tabstop = 2
+bo.softtabstop = 2
 bo.textwidth = 120
 bo.expandtab = true
 
