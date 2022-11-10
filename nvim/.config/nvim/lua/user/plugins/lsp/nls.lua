@@ -9,6 +9,7 @@ local sources = {
   -- formatting.prettierd,
   formatting.prettier,
   formatting.stylua,
+  formatting.gofumpt,
   formatting.black.with({ extra_args = { "--fast", "-l 80", "--preview" } }),
   diagnostics.flake8,
   diagnostics.eslint_d,
