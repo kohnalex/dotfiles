@@ -106,13 +106,13 @@ abbr ta "tmux attach"
 
 ### EXA
 if type -q exa
-	alias ls='exa -l --color=always --group-directories-first --octal-permissions' # my preferred listing
-	alias la='exa -a --color=always --group-directories-first --octal-permissions'  # all files and dirs
-	alias ll='exa -al --color=always --group-directories-first --octal-permissions'  # long format
-	alias llt='exa -aT --color=always --group-directories-first' # tree listing all
-	alias lt='exa -T --color=always --group-directories-first' # tree listing hide dotfiles TODO: exclude .git & node_modules
-	alias l.='exa -a | egrep "^\."'
-	abbr l "ll"
+    # alias ls='exa -l --color=always --group-directories-first --octal-permissions'
+    alias la='exa -a --color=always --group-directories-first --octal-permissions'
+    alias ll='exa -al --color=always --group-directories-first --octal-permissions'
+    alias llt='exa -aT --color=always --group-directories-first'
+    alias lt='exa -T --color=always --group-directories-first'
+    alias l.='exa -a | egrep "^\."'
+    abbr l "ll"
 end
 
 ### CD
@@ -124,10 +124,10 @@ alias .....='cd ../../../../../'
 
 ### GCC
 if type -q gcc-11
-	alias gcc='gcc-11'
-	alias cc='gcc-11'
-	alias g++='g++-11'
-	alias c++='c++-11'
+    alias gcc='gcc-11'
+    alias cc='gcc-11'
+    alias g++='g++-11'
+    alias c++='c++-11'
 end
 
 ### FZF
@@ -142,9 +142,9 @@ abbr gw './gradlew'
 abbr cdc 'cd ~/Documents/Code'
 abbr cdd 'cd ~/dotfiles'
 abbr md 'mkdir'
-alias khnlx="ssh khnlx@h2888247.stratoserver.net"
-alias sfish="source ~/.config/fish/config.fish"
-alias :q="exit"
+abbr khnlx "ssh khnlx@h2888247.stratoserver.net"
+abbr sfish "source ~/.config/fish/config.fish"
+abbr :q "exit"
 
 alias vion="fish_vi_key_bindings"
 alias vioff="fish_default_key_bindings"
