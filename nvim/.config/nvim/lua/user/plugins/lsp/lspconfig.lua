@@ -18,6 +18,7 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 lspconfig["pyright"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern("venv"),
 })
 
 lspconfig["gopls"].setup({

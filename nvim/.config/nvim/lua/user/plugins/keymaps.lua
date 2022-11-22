@@ -29,6 +29,7 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
   keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts) -- format code
   keymap("n", "<leader>lS", "<cmd>LspRestart<CR>", opts) -- format code
+  keymap("n", "<leader>lI", "<cmd>LspInfo<CR>", opts) -- Client Information
 
   if client.name == "tsserver" then
     keymap("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts) -- File renaming
