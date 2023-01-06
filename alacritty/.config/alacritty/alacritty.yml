@@ -1,13 +1,13 @@
 alt_send_esc: false
 font:
   normal:
-    family: ComicCodeLigatures Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Regular
   bold:
-    family: ComicCodeLigatures Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Bold
   italic:
-    family: ComicCodeLigatures Nerd Font
+    family: JetBrainsMono Nerd Font Mono
     style: Italic
   size: 15.0
   offset:
