@@ -11,6 +11,7 @@ packer.startup(function(use)
   use("catppuccin/nvim") -- Colortheme
   use("NLKNguyen/papercolor-theme") -- Colortheme
   use("morhetz/gruvbox") -- Colortheme
+  use("Mofiqul/vscode.nvim") -- Colortheme
   use("kyazdani42/nvim-tree.lua") -- Nvim Tree
   use("lewis6991/gitsigns.nvim") -- Git status
   use("tpope/vim-sleuth") -- Smart tabs & spaces

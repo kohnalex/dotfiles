@@ -27,13 +27,6 @@ opt.incsearch = true
 opt.laststatus = 3
 opt.guifont = "FantasqueSansMono Nerd Font Mono:h17"
 
--- Buffer local
-bo.shiftwidth = 4
-bo.tabstop = 4
-bo.softtabstop = 4
-bo.textwidth = 120
-bo.expandtab = true
-
 -- Highlight on yank
 vim.cmd([[
   augroup YankHighlight
