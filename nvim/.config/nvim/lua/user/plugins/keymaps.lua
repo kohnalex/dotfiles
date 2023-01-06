@@ -23,8 +23,8 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
   keymap("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
   keymap("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-  keymap("n", "<C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
-  keymap("n", "<C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
+  keymap("n", "<leader><C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
+  keymap("n", "<leader><C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
   keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
   keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts) -- format code
@@ -34,6 +34,12 @@ function M.setup_lsp_keymap(client, _)
   if client.name == "tsserver" then
     keymap("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts) -- File renaming
   end
+end
+
+-- GitSigns
+function M.setup_gitsigns_keymap()
+  keymap("n", "<C-n>", ":Gitsigns next_hunk<CR>", opts)
+  keymap("n", "<C-p>", ":Gitsigns prev_hunk<CR>", opts)
 end
 
 -- Telescope
