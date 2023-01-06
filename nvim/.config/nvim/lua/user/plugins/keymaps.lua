@@ -47,33 +47,4 @@ function M.setup_telescope_keymap()
   keymap("n", "<leader>fg", ":Telescope git_status<CR>", opts)
 end
 
--- Hop
-function M.setup_hop_keymap()
-  -- keymap(
-  --   "",
-  --   "f",
-  --   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })<cr>",
-  --   opts
-  -- )
-  -- keymap(
-  --   "",
-  --   "F",
-  --   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })<cr>",
-  --   opts
-  -- )
-  -- keymap(
-  --   "",
-  --   "t",
-  --   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })<cr>",
-  --   opts
-  -- )
-  -- keymap(
-  --   "",
-  --   "T",
-  --   "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })<cr>",
-  --   opts
-  -- )
-  keymap("", "s", "<cmd>HopWord<cr>", opts)
-end
-
 return M
