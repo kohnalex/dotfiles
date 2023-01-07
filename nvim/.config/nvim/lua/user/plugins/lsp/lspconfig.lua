@@ -10,6 +10,25 @@ if not typescript_ok then return end
 local on_attach = function(client, bufnr)
   local keymaps = require("user.plugins.keymaps")
   keymaps.setup_lsp_keymap(client, bufnr)
+
+  -- Highlight LSP Symbols
+  if client.server_capabilities.documentHighlightProvider then
+    vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
+    vim.api.nvim_clear_autocmds({ buffer = bufnr, group = "lsp_document_highlight" })
+    -- vim.api.nvim_create_autocmd("CursorHold", {
+    vim.api.nvim_create_autocmd("CursorMoved", {
+      callback = vim.lsp.buf.document_highlight,
+      buffer = bufnr,
+      group = "lsp_document_highlight",
+      desc = "Document Highlight",
+    })
+    vim.api.nvim_create_autocmd("CursorMoved", {
+      callback = vim.lsp.buf.clear_references,
+      buffer = bufnr,
+      group = "lsp_document_highlight",
+      desc = "Clear All the References",
+    })
+  end
   keymaps.setup_codeaction_keymap()
 end
 
