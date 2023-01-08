@@ -22,6 +22,7 @@ packer.startup(function(use)
   use("christoomey/vim-tmux-navigator") -- Seemless Vim and Tmux navigator
   use("nvim-lualine/lualine.nvim") -- Status line
   use("folke/which-key.nvim") -- Keymap hints
+  use("rmagatti/auto-session") -- Session manager
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
