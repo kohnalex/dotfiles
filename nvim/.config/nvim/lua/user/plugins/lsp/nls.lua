@@ -10,6 +10,7 @@ local sources = {
   formatting.stylua,
   formatting.gofumpt,
   formatting.black.with({ extra_args = { "--fast", "-l 80", "--preview" } }),
+  formatting.clang_format.with({ extra_args = { "-style=file" } }),
   diagnostics.flake8,
   diagnostics.eslint_d,
   code_actions.gitsigns,
@@ -43,4 +44,5 @@ nls.setup({
   sources = sources,
   on_attach = on_attach,
   debounce = 150,
+  debug = false,
 })

@@ -25,6 +25,7 @@ function M.setup_mason_nls()
       "prettierd",
       "stylua",
       "black",
+      "clang-format",
     },
   })
 end
