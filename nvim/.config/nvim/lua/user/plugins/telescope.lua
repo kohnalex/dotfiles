@@ -6,6 +6,11 @@ if not actions_ok then return end
 
 telescope.setup({
   defaults = {
+    layout_strategy = "vertical",
+    layout_config = {
+      height = 0.95,
+      width = 0.95,
+    },
     mappings = {
       i = {
         ["<C-j>"] = actions.move_selection_next,
