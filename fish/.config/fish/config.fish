@@ -91,7 +91,7 @@ if type -q git
   abbr gfa "git fetch --all"
 end
 
-### AEROFOILS
+### ESP_IDF
 abbr idf ". $HOME/esp/esp-idf/export.fish"
 abbr ipy "idf.py"
 
@@ -138,9 +138,10 @@ if type -q fzf
 end
 
 ### MISC
+zoxide init fish | source
+
+abbr f "z"
 abbr gw './gradlew'
-abbr cdc 'cd ~/Documents/Code'
-abbr cdd 'cd ~/dotfiles'
 abbr md 'mkdir'
 abbr khnlx "ssh khnlx@h2888247.stratoserver.net"
 abbr sfish "source ~/.config/fish/config.fish"
