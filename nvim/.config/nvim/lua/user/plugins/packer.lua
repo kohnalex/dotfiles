@@ -23,6 +23,7 @@ packer.startup(function(use)
   use("nvim-lualine/lualine.nvim") -- Status line
   use("folke/which-key.nvim") -- Keymap hints
   use("rmagatti/auto-session") -- Session manager
+  use("kohnalex/symbols-outline.nvim") -- Symbol outline
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager

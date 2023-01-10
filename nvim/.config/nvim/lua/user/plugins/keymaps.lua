@@ -26,7 +26,7 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "<leader><C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
   keymap("n", "<leader><C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
   keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
-  keymap("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+  keymap("n", "<leader>o", "<cmd>SymbolsOutline<CR>", opts) -- see outline on right hand side
   keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts) -- format code
   keymap("n", "<leader>lS", "<cmd>LspRestart<CR>", opts) -- format code
   keymap("n", "<leader>lI", "<cmd>LspInfo<CR>", opts) -- Client Information
