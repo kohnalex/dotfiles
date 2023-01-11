@@ -15,8 +15,8 @@ local on_attach = function(client, bufnr)
   if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_create_augroup("lsp_document_highlight", { clear = true })
     vim.api.nvim_clear_autocmds({ buffer = bufnr, group = "lsp_document_highlight" })
-    -- vim.api.nvim_create_autocmd("CursorHold", {
-    vim.api.nvim_create_autocmd("CursorMoved", {
+    vim.api.nvim_create_autocmd("CursorHold", {
+      -- vim.api.nvim_create_autocmd("CursorMoved", {
       callback = vim.lsp.buf.document_highlight,
       buffer = bufnr,
       group = "lsp_document_highlight",
