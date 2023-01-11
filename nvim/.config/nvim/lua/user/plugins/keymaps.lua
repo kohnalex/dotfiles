@@ -48,9 +48,10 @@ function M.setup_telescope_keymap()
   keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
   keymap("n", "<leader>fs", ":Telescope live_grep<CR>", opts)
   keymap("n", "<leader>fc", ":Telescope grep_string<CR>", opts)
-  keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+  keymap("n", "<leader>fB", ":Telescope buffers<CR>", opts)
   keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
   keymap("n", "<leader>fg", ":Telescope git_status<CR>", opts)
+  keymap("n", "<leader>fb", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 end
 
 return M
