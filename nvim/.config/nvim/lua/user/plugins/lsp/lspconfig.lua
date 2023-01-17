@@ -45,6 +45,11 @@ lspconfig["gopls"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["rust_analyzer"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- Make clangd to work with esp idf
 -- @see https://github.com/espressif/esp-idf/issues/6721
 lspconfig["clangd"].setup({

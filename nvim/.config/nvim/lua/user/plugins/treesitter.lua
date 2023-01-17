@@ -7,6 +7,7 @@ treesitter.setup({
   },
   ensure_installed = {
     "jsdoc",
+    "rust",
     "typescript",
     "javascript",
     "vue",

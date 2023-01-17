@@ -26,6 +26,7 @@ function M.setup_mason_nls()
       "stylua",
       "black",
       "clang-format",
+      "rustfmt",
     },
   })
 end
@@ -38,6 +39,7 @@ function M.setup_mason_lsp()
       "sumneko_lua",
       "pyright",
       "gopls",
+      "rust_analyzer",
     },
   })
 end

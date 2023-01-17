@@ -7,6 +7,7 @@ local code_actions = nls.builtins.code_actions
 
 local sources = {
   formatting.prettierd,
+  formatting.rustfmt,
   formatting.stylua,
   formatting.gofumpt,
   formatting.black.with({ extra_args = { "--fast", "-l 80", "--preview" } }),
