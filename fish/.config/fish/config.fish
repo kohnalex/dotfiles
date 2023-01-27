@@ -150,3 +150,11 @@ abbr :q "exit"
 alias vion="fish_vi_key_bindings"
 alias vioff="fish_default_key_bindings"
 
+
+function anaconda
+    # >>> conda initialize >>>
+    # !! Contents within this block are managed by 'conda init' !!
+    eval /Users/alex/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+    # <<< conda initialize <<<
+end
+
