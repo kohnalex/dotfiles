@@ -24,6 +24,7 @@ packer.startup(function(use)
   use("folke/which-key.nvim") -- Keymap hints
   use("rmagatti/auto-session") -- Session manager
   use("kohnalex/symbols-outline.nvim") -- Symbol outline
+  use("folke/trouble.nvim") -- Like Telescope but with open buffers
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager

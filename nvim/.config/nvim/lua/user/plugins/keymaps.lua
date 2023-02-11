@@ -25,7 +25,7 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
   keymap("n", "<C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
   keymap("n", "<C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
-  keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
+  keymap("n", "K", "<cmd>Lspsaga hover_doc ++quiet<CR>", opts) -- show documentation for what is under cursor
   keymap("n", "<leader>o", "<cmd>SymbolsOutline<CR>", opts) -- see outline on right hand side
   keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts) -- format code
   keymap("n", "<leader>lS", "<cmd>LspRestart<CR>", opts) -- format code
@@ -52,6 +52,12 @@ function M.setup_telescope_keymap()
   keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
   keymap("n", "<leader>fg", ":Telescope git_status<CR>", opts)
   keymap("n", "<leader>fb", ":Telescope current_buffer_fuzzy_find<CR>", opts)
+  keymap("n", "<leader>fr", ":Telescope lsp_references<CR>", opts)
+end
+
+-- Trouble
+function M.setup_trouble_keymap()
+  keymap("n", "<leader>tr", ":Trouble lsp_references<CR>", opts)
 end
 
 return M

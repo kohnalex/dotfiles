@@ -17,6 +17,9 @@ telescope.setup({
         ["<C-k>"] = actions.move_selection_previous,
         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
       },
+      n = {
+        ["t"] = require("trouble.providers.telescope").open_with_trouble,
+      },
     },
   },
   extensions = {
