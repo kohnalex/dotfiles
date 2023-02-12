@@ -15,4 +15,10 @@ lspsaga.setup({
   lightbulb = {
     enable = false,
   },
+  symbol_in_windbar = {
+    enable = false,
+  },
+  beacon = {
+    enable = false,
+  },
 })
