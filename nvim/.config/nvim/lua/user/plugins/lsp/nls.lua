@@ -13,7 +13,11 @@ local sources = {
   formatting.black.with({ extra_args = { "--fast", "-l 80", "--preview" } }),
   formatting.clang_format.with({ extra_args = { "-style=file" } }),
   diagnostics.flake8,
-  diagnostics.eslint_d,
+  diagnostics.eslint_d.with({
+    condition = function(utils)
+      return utils.has_file(".eslintrc.json")
+    end,
+  }),
   code_actions.gitsigns,
 }
 
