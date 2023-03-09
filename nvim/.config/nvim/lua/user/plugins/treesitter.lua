@@ -23,6 +23,7 @@ treesitter.setup({
     "css",
     "scss",
     "html",
+    "dart",
     "dockerfile",
     "c",
     "cpp",
