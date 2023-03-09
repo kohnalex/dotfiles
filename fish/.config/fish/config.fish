@@ -121,6 +121,9 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../../'
 
+### RUBY VERSION MANAGER
+set -x PATH $HOME/.rbenv/bin $PATH
+rbenv init - | source
 
 ### GCC
 if type -q gcc-11
