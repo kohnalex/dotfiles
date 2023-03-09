@@ -36,7 +36,7 @@ function M.setup_mason_lsp()
   mason_lsp.setup({
     ensure_installed = {
       "tsserver",
-      "sumneko_lua",
+      "lua_ls",
       "pyright",
       "gopls",
       "rust_analyzer",
