@@ -25,6 +25,7 @@ packer.startup(function(use)
   use("rmagatti/auto-session") -- Session manager
   use("kohnalex/symbols-outline.nvim") -- Symbol outline
   use("folke/trouble.nvim") -- Like Telescope but with open buffers
+  use("voldikss/vim-floaterm") -- Floating terminal
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager

@@ -60,4 +60,13 @@ function M.setup_trouble_keymap()
   keymap("n", "<leader>tr", ":Trouble lsp_references<CR>", opts)
 end
 
+-- Floaterm
+function M.setup_floaterm_keymap()
+  keymap("n", "<leader>tt", ":FloatermToggle<CR>", opts)
+  keymap("n", "<leader>tc", ":FloatermNew<CR>", opts)
+  keymap("n", "<leader>tx", ":FloatermKill<CR>", opts)
+  keymap("n", "<leader>tn", ":FloatermNext<CR>", opts)
+  keymap("n", "<leader>tp", ":FloatermPrev<CR>", opts)
+end
+
 return M
