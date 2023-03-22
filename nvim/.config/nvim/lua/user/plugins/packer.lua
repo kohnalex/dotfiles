@@ -26,6 +26,7 @@ packer.startup(function(use)
   use("kohnalex/symbols-outline.nvim") -- Symbol outline
   use("folke/trouble.nvim") -- Like Telescope but with open buffers
   use("voldikss/vim-floaterm") -- Floating terminal
+  use("f-person/auto-dark-mode.nvim") -- OS Mode detection
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
