@@ -27,6 +27,7 @@ packer.startup(function(use)
   use("folke/trouble.nvim") -- Like Telescope but with open buffers
   use("voldikss/vim-floaterm") -- Floating terminal
   use("f-person/auto-dark-mode.nvim") -- OS Mode detection
+  use("github/copilot.vim") -- Copilot
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
