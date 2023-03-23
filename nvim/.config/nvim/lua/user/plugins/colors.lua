@@ -1,3 +1,5 @@
+vim.api.nvim_command("colorscheme vscode")
+
 local ok, automode = pcall(require, "auto-dark-mode")
 if not ok then return end
 
