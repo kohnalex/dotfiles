@@ -52,6 +52,7 @@ function M.setup_telescope_keymap()
   keymap("n", "<leader>fg", ":Telescope git_status<CR>", opts)
   keymap("n", "<leader>fb", ":Telescope current_buffer_fuzzy_find<CR>", opts)
   keymap("n", "<leader>fr", ":Telescope lsp_references<CR>", opts)
+  keymap("n", "<leader>fp", ":Telescope resume<CR>", opts)
 end
 
 -- Trouble
