@@ -10,7 +10,6 @@
 -- 2. mason-lspconfig.nvim
 -- 3. Setup servers via lspconfig
 
-require("user.plugins.lsp.lspsaga")
 require("user.plugins.lsp.mason").setup_mason()
 require("user.plugins.lsp.nls")
 require("user.plugins.lsp.mason").setup_mason_nls()

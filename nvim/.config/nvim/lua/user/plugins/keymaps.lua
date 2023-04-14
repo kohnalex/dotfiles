@@ -16,16 +16,15 @@ end
 -- LSP
 function M.setup_lsp_keymap(client, _)
   -- set keybinds
-  keymap("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
+  keymap("n", "gr", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
   keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
-  -- keymap("n", "gD", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
   keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- goto definition
   keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
-  keymap("n", "<leader>lr", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
-  keymap("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-  keymap("n", "<C-p>", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer
-  keymap("n", "<C-n>", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts) -- jump to next diagnostic in buffer
-  keymap("n", "K", "<cmd>Lspsaga hover_doc ++quiet<CR>", opts) -- show documentation for what is under cursor
+  keymap("n", "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<CR>", opts) -- smart rename
+  keymap("n", "<leader>ld", "<cmd>lua vim.diagnostic.open_float()<CR>", opts) -- show  diagnostics for line
+  keymap("n", "<C-p>", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts) -- jump to previous diagnostic in buffer
+  keymap("n", "<C-n>", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts) -- jump to next diagnostic in buffer
+  keymap("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts) -- show documentation for what is under cursor
   keymap("n", "<leader>o", "<cmd>SymbolsOutline<CR>", opts) -- see outline on right hand side
   keymap("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts) -- format code
   keymap("n", "<leader>lS", "<cmd>LspRestart<CR>", opts) -- format code

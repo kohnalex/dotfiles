@@ -28,12 +28,12 @@ packer.startup(function(use)
   use("voldikss/vim-floaterm") -- Floating terminal
   use("f-person/auto-dark-mode.nvim") -- OS Mode detection
   use("github/copilot.vim") -- Copilot
+  use("stevearc/dressing.nvim") -- Better UI
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
   use("williamboman/mason-lspconfig.nvim") -- Mason-lspconfig helper
   use("neovim/nvim-lspconfig") -- LSP Configuration
-  use({ "glepnir/lspsaga.nvim", branch = "main" }) -- Lspsaga
   use("jose-elias-alvarez/typescript.nvim") -- Better TypeScript integration
   use("onsails/lspkind.nvim") -- Lsp icons
   use("jose-elias-alvarez/null-ls.nvim") -- formatting, linting, ...
