@@ -14,6 +14,7 @@ treesitter.setup({
     "javascript",
     "vue",
     "java",
+    "kotlin",
     "python",
     "yaml",
     "lua",
