@@ -55,11 +55,16 @@ lspconfig["rust_analyzer"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["kotlin_language_server"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- Make clangd to work with esp idf
 -- @see https://github.com/espressif/esp-idf/issues/6721
 lspconfig["clangd"].setup({
   cmd = {
-    "/Users/alex/Documents/Code/aerofoils/llvm-project/build/bin/clangd",
+    "/Users/alex/Documents/Code/aerofoils/llvm-bin/clangd",
     "--background-index",
     "--query-driver=/Users/alex/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/**/bin/xtensa-esp32-elf-*",
   },
