@@ -41,6 +41,11 @@ function M.setup_gitsigns_keymap()
   keymap("n", "<leader><C-p>", ":Gitsigns prev_hunk<CR>", opts)
 end
 
+-- Toggleterm
+function M.setup_term_keymap()
+  keymap("n", "<leader><C-j>", ":ToggleTerm<CR>", opts)
+end
+
 -- Telescope
 function M.setup_telescope_keymap()
   -- TODO: open in trouble.nvim

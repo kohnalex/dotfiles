@@ -29,6 +29,7 @@ packer.startup(function(use)
   use("f-person/auto-dark-mode.nvim") -- OS Mode detection
   use("github/copilot.vim") -- Copilot
   use("stevearc/dressing.nvim") -- Better UI
+  use({ "akinsho/toggleterm.nvim", tag = "*" }) -- Toggleterm
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
