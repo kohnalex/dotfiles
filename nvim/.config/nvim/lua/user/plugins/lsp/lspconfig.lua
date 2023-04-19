@@ -60,6 +60,16 @@ lspconfig["kotlin_language_server"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["angularls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["tailwindcss"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- Make clangd to work with esp idf
 -- @see https://github.com/espressif/esp-idf/issues/6721
 lspconfig["clangd"].setup({

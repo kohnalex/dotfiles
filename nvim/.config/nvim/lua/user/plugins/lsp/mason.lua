@@ -35,6 +35,8 @@ end
 function M.setup_mason_lsp()
   mason_lsp.setup({
     ensure_installed = {
+      "angularls",
+      "tailwindcss",
       "tsserver",
       "lua_ls",
       "pyright",
