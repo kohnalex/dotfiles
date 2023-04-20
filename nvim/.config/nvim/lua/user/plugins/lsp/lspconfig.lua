@@ -72,16 +72,21 @@ lspconfig["tailwindcss"].setup({
 
 -- Make clangd to work with esp idf
 -- @see https://github.com/espressif/esp-idf/issues/6721
-lspconfig["clangd"].setup({
-  -- cmd = {
-  --   "/Users/alex/Documents/Code/aerofoils/llvm-bin/clangd",
-  --   "--background-index",
-  --   "--query-driver=/Users/alex/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/**/bin/xtensa-esp32-elf-*",
-  -- },
-  -- root_dir = lspconfig.util.root_pattern("build/compile_commands.json", ".git"),
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
+-- lspconfig["clangd"].setup({
+-- cmd = {
+--   "/Users/alex/Documents/Code/aerofoils/llvm-bin/clangd",
+--   "--background-index",
+--   "--query-driver=/Users/alex/.espressif/tools/xtensa-esp32-elf/esp-2021r1-8.4.0/**/bin/xtensa-esp32-elf-*",
+-- },
+-- root_dir = lspconfig.util.root_pattern("build/compile_commands.json", ".git"),
+-- capabilities = capabilities,
+-- on_attach = on_attach,
+-- })
+
+-- lspconfig["clangd"].setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- })
 
 lspconfig["lua_ls"].setup({
   capabilities = capabilities,
