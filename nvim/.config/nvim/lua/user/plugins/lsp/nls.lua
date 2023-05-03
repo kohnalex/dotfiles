@@ -6,6 +6,7 @@ local diagnostics = nls.builtins.diagnostics
 local code_actions = nls.builtins.code_actions
 
 local sources = {
+  -- Note to me: If prettierd stops working for some reason try deleting .prettierd in $HOME
   formatting.prettierd,
   formatting.rustfmt,
   formatting.stylua,
