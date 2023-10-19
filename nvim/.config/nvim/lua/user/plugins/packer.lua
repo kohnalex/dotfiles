@@ -8,10 +8,6 @@ packer.startup(function(use)
   use("nvim-treesitter/nvim-treesitter") -- Better highlight
   use("nvim-lua/plenary.nvim") -- Plugin helper
   use("kyazdani42/nvim-web-devicons") -- Nvim Icons
-  use("catppuccin/nvim") -- Colortheme
-  use("NLKNguyen/papercolor-theme") -- Colortheme
-  use("morhetz/gruvbox") -- Colortheme
-  use("Mofiqul/vscode.nvim") -- Colortheme
   use("kyazdani42/nvim-tree.lua") -- Nvim Tree
   use("lewis6991/gitsigns.nvim") -- Git status
   use("tpope/vim-sleuth") -- Smart tabs & spaces
@@ -25,12 +21,18 @@ packer.startup(function(use)
   use("rmagatti/auto-session") -- Session manager. TODO: replace with folkes persist.nvim
   use("kohnalex/symbols-outline.nvim") -- Symbol outline
   use("folke/trouble.nvim") -- Like Telescope but with open buffers
-  use("voldikss/vim-floaterm") -- Floating terminal
   use("f-person/auto-dark-mode.nvim") -- OS Mode detection
   use("github/copilot.vim") -- Copilot
   use("stevearc/dressing.nvim") -- Better UI
   use({ "akinsho/toggleterm.nvim", tag = "*" }) -- Toggleterm
   use({ "karb94/neoscroll.nvim" }) -- Smooth C-d/C-u scrolling
+
+  -- Color Schemes
+  use("catppuccin/nvim") -- Colortheme
+  use("NLKNguyen/papercolor-theme") -- Colortheme
+  use("morhetz/gruvbox") -- Colortheme
+  use("Mofiqul/vscode.nvim") -- Colortheme
+  use("folke/tokyonight.nvim") -- colortheme
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
