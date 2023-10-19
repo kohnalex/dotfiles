@@ -30,6 +30,7 @@ packer.startup(function(use)
   use("github/copilot.vim") -- Copilot
   use("stevearc/dressing.nvim") -- Better UI
   use({ "akinsho/toggleterm.nvim", tag = "*" }) -- Toggleterm
+  use({ "karb94/neoscroll.nvim" }) -- Smooth C-d/C-u scrolling
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager
