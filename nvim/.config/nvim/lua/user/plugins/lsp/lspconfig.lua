@@ -60,6 +60,11 @@ lspconfig["kotlin_language_server"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["dartls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 lspconfig["angularls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
