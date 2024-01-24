@@ -1,0 +1,189 @@
+alt_send_esc = false
+
+[color_schemes.colors.normal]
+black = "0x1E1E1E"
+blue = "0x569CD6"
+cyan = "0x9CDCFE"
+green = "0x608B4E"
+magenta = "0xC586C0"
+red = "0xF44747"
+white = "0xD4D4D4"
+yellow = "0xD7BA7D"
+
+[color_schemes.colors.primary]
+background = "0x1E1E1E"
+foreground = "0xD4D4D4"
+
+[[color_schemes.mocha.indexed_colors]]
+color = "#FAB387"
+index = 16
+
+[[color_schemes.mocha.indexed_colors]]
+color = "#F5E0DC"
+index = 17
+
+[color_schemes.mocha.bright]
+black = "#585B70"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#A6ADC8"
+yellow = "#F9E2AF"
+
+[color_schemes.mocha.cursor]
+cursor = "#F5E0DC"
+text = "#1E1E2E"
+
+[color_schemes.mocha.dim]
+black = "#45475A"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#BAC2DE"
+yellow = "#F9E2AF"
+
+[color_schemes.mocha.hints.end]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[color_schemes.mocha.hints.start]
+background = "#F9E2AF"
+foreground = "#1E1E2E"
+
+[color_schemes.mocha.normal]
+black = "#45475A"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#BAC2DE"
+yellow = "#F9E2AF"
+
+[color_schemes.mocha.primary]
+background = "#1E1E2E"
+bright_foreground = "#CDD6F4"
+dim_foreground = "#CDD6F4"
+foreground = "#CDD6F4"
+
+[color_schemes.mocha.search.bar]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[color_schemes.mocha.search.focused_match]
+background = "#A6E3A1"
+foreground = "#1E1E2E"
+
+[color_schemes.mocha.search.matches]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[color_schemes.mocha.selection]
+background = "#F5E0DC"
+text = "#1E1E2E"
+
+[color_schemes.mocha.vi_mode_cursor]
+cursor = "#B4BEFE"
+text = "#1E1E2E"
+
+[[colors.indexed_colors]]
+color = "#FAB387"
+index = 16
+
+[[colors.indexed_colors]]
+color = "#F5E0DC"
+index = 17
+
+[colors.bright]
+black = "#585B70"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#A6ADC8"
+yellow = "#F9E2AF"
+
+[colors.cursor]
+cursor = "#F5E0DC"
+text = "#1E1E2E"
+
+[colors.dim]
+black = "#45475A"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#BAC2DE"
+yellow = "#F9E2AF"
+
+[colors.hints.end]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.hints.start]
+background = "#F9E2AF"
+foreground = "#1E1E2E"
+
+[colors.normal]
+black = "#45475A"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#BAC2DE"
+yellow = "#F9E2AF"
+
+[colors.primary]
+background = "#1E1E2E"
+bright_foreground = "#CDD6F4"
+dim_foreground = "#CDD6F4"
+foreground = "#CDD6F4"
+
+[colors.search.bar]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.search.focused_match]
+background = "#A6E3A1"
+foreground = "#1E1E2E"
+
+[colors.search.matches]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.selection]
+background = "#F5E0DC"
+text = "#1E1E2E"
+
+[colors.vi_mode_cursor]
+cursor = "#B4BEFE"
+text = "#1E1E2E"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "ComicCodeLigatures Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "ComicCodeLigatures Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "ComicCodeLigatures Nerd Font"
+style = "Regular"
+
+[font.offset]
+y = 0
+
+[window]
+decorations = "Buttonless"
+opacity = 1.0
