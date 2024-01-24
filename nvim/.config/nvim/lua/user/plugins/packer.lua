@@ -5,6 +5,7 @@ packer.startup(function(use)
   use("wbthomason/packer.nvim") -- Packer manages itself
 
   -- Misc
+  use("xiyaowong/transparent.nvim") -- Transparent BG
   use("nvim-treesitter/nvim-treesitter") -- Better highlight
   use("nvim-lua/plenary.nvim") -- Plugin helper
   use("kyazdani42/nvim-web-devicons") -- Nvim Icons
