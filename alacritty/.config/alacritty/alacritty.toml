@@ -6,16 +6,17 @@ import = [
 size = 13.0
 
 [font.bold]
-family = "ComicCodeLigatures Nerd Font"
+family = "JetBrainsMono Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "ComicCodeLigatures Nerd Font"
-style = "Italic"
+family = "JetBrainsMono Nerd Font Mono"
+style = "Light Italic"
 
 [font.normal]
-family = "ComicCodeLigatures Nerd Font"
-style = "Regular"
+family = "JetBrainsMono Nerd Font Mono"
+# style = "Regular"
+style = "Light"
 
 [font.offset]
 y = 0
