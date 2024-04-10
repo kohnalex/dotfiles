@@ -29,11 +29,12 @@ packer.startup(function(use)
   use({ "karb94/neoscroll.nvim" }) -- Smooth C-d/C-u scrolling
 
   -- Color Schemes
-  use("catppuccin/nvim") -- Colortheme
-  use("NLKNguyen/papercolor-theme") -- Colortheme
-  use("morhetz/gruvbox") -- Colortheme
-  use("Mofiqul/vscode.nvim") -- Colortheme
-  use("folke/tokyonight.nvim") -- colortheme
+  use("catppuccin/nvim")
+  use("NLKNguyen/papercolor-theme")
+  use("morhetz/gruvbox")
+  use("Mofiqul/vscode.nvim")
+  use("folke/tokyonight.nvim")
+  use("projekt0n/github-nvim-theme")
 
   -- LSP
   use("williamboman/mason.nvim") -- LSP Server manager

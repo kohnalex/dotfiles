@@ -1,5 +1,7 @@
-local color_cmd_dark = "colorscheme catppuccin-mocha"
-local color_cmd_light = "colorscheme catppuccin-frappe"
+local color_cmd_dark = "colorscheme github_dark"
+local color_cmd_light = "colorscheme github_dark"
+-- local color_cmd_dark = "colorscheme catppuccin-mocha"
+-- local color_cmd_light = "colorscheme catppuccin-frappe"
 
 vim.api.nvim_command(color_cmd_dark)
 

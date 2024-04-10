@@ -1,5 +1,6 @@
 local opt = vim.opt
 local bo = vim.bo
+local wo = vim.wo
 
 -- opt.termguicolors = true -- Enable colors in terminal. Disabled, because it breaks cmp themes.
 opt.hlsearch = true --Set highlight on search
@@ -26,6 +27,8 @@ opt.cursorline = true
 opt.incsearch = true
 opt.laststatus = 3
 opt.guifont = "FantasqueSansMono Nerd Font Mono:h17"
+
+wo.wrap = false
 
 -- Highlight on yank
 vim.cmd([[
