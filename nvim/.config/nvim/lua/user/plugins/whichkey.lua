@@ -9,3 +9,4 @@ local conf = {
 }
 
 whichkey.setup(conf)
+require("user.plugins.keymaps").setup_default_keymap()

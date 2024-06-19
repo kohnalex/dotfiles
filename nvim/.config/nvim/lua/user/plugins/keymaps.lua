@@ -3,6 +3,11 @@ local M = {}
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Default, no plugin specific keymaps
+function M.setup_default_keymap()
+  keymap("n", "<leader>bc", ":%bd|e#<CR>", opts) -- Close all buffers except current
+end
+
 -- Nvimtree
 function M.setup_nvimtree_keymap()
   keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)

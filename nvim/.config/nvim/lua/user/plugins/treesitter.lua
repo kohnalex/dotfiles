@@ -6,6 +6,7 @@ treesitter.setup({
     enable = false,
   },
   ensure_installed = {
+    "latex",
     "markdown",
     "markdown_inline",
     "jsdoc",

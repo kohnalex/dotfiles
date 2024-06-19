@@ -27,8 +27,9 @@ opt.cursorline = true
 opt.incsearch = true
 opt.laststatus = 3
 opt.guifont = "FantasqueSansMono Nerd Font Mono:h17"
+-- opt.colorcolumn = "120"
 
-wo.wrap = false
+wo.wrap = true
 
 -- Highlight on yank
 vim.cmd([[

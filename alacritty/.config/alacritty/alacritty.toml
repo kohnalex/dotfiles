@@ -20,10 +20,10 @@ family = "JetBrainsMono Nerd Font Mono"
 style = "Light"
 
 [font.offset]
-y = 0
+y = 2
 
 [window]
 decorations = "Buttonless"
-opacity = 0.6
+opacity = 0.9
 # option_as_alt = "OnlyLeft"
 blur = true
