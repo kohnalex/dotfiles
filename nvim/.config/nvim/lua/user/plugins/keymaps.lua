@@ -35,7 +35,7 @@ function M.setup_lsp_keymap(client, _)
   keymap("n", "<leader>lS", "<cmd>LspRestart<CR>", opts) -- format code
   keymap("n", "<leader>lI", "<cmd>LspInfo<CR>", opts) -- Client Information
 
-  if client.name == "tsserver" then
+  if client.name == "ts_ls" then
     keymap("n", "<leader>rf", ":TypescriptRenameFile<CR>", opts) -- File renaming
   end
 end

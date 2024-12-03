@@ -18,7 +18,7 @@ telescope.setup({
         ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
       },
       n = {
-        ["t"] = require("trouble.providers.telescope").open_with_trouble,
+        ["t"] = require("trouble.sources.telescope").open_with_trouble,
       },
     },
   },

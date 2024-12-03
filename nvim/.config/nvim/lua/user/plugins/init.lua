@@ -1,4 +1,4 @@
-require("user.plugins.packer")
+require("user.plugins.lazy")
 require("user.plugins.nvimtree")
 require("user.plugins.treesitter")
 require("user.plugins.gitsigns")
