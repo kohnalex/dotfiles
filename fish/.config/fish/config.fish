@@ -121,9 +121,11 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../../'
 
+if type -q rbenv
 ### RUBY VERSION MANAGER
 set -x PATH $HOME/.rbenv/bin $PATH
 rbenv init - | source
+end
 
 ### GCC
 if type -q gcc-11
@@ -140,8 +142,10 @@ if type -q fzf
     end
 end
 
+if type -q zoxide
 ### MISC
 zoxide init fish | source
+end
 
 abbr f "z"
 abbr gw './gradlew'
