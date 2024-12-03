@@ -115,6 +115,16 @@ if type -q exa
     abbr l "ll"
 end
 
+if type -q eza
+    # alias ls='exa -l --color=always --group-directories-first --octal-permissions'
+    alias la='eza -a --color=always --group-directories-first --octal-permissions'
+    alias ll='eza -al --color=always --group-directories-first --octal-permissions'
+    alias llt='eza -aT --color=always --group-directories-first'
+    alias lt='eza -T --color=always --group-directories-first'
+    alias l.='eza -a | egrep "^\."'
+    abbr l "ll"
+end
+
 ### CD
 alias ..='cd ../../'
 alias ...='cd ../../../'
