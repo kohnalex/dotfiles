@@ -163,6 +163,7 @@ abbr md 'mkdir'
 abbr khnlx "ssh khnlx@h2888247.stratoserver.net"
 abbr sfish "source ~/.config/fish/config.fish"
 abbr :q "exit"
+abbr -a k3000 'set pids (lsof -i -P -n | grep 3000 | awk \'{print $2}\'); for pid in $pids; kill -9 $pid; end'
 
 alias vion="fish_vi_key_bindings"
 alias vioff="fish_default_key_bindings"
