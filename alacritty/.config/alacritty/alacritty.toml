@@ -24,6 +24,12 @@ opacity = 0.9
 # option_as_alt = "OnlyLeft"
 blur = true
 
+[keyboard]
+bindings = [
+  # other bindings, and this one:
+  { key = "Space", mods = "Alt", action = "None" }
+]
+
 [general]
 import = [
     # "~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
