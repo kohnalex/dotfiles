@@ -4,9 +4,6 @@ if not lspconfig_ok then return end
 local cmp_nvim_ok, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
 if not cmp_nvim_ok then return end
 
-local typescript_ok, typescript = pcall(require, "typescript")
-if not typescript_ok then return end
-
 local on_attach = function(client, bufnr)
   local keymaps = require("user.plugins.keymaps")
   keymaps.setup_lsp_keymap(client, bufnr)
@@ -75,6 +72,11 @@ lspconfig["tailwindcss"].setup({
   on_attach = on_attach,
 })
 
+lspconfig["ts_ls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 -- Make clangd to work with esp idf
 -- @see https://github.com/espressif/esp-idf/issues/6721
 -- lspconfig["clangd"].setup({
@@ -88,10 +90,10 @@ lspconfig["tailwindcss"].setup({
 -- on_attach = on_attach,
 -- })
 
-lspconfig["clangd"].setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
+-- lspconfig["clangd"].setup({
+--   capabilities = capabilities,
+--   on_attach = on_attach,
+-- })
 
 lspconfig["lua_ls"].setup({
   capabilities = capabilities,
@@ -110,14 +112,5 @@ lspconfig["lua_ls"].setup({
         },
       },
     },
-  },
-})
-
--- TS looks a bit different because of the used ts plugin
-typescript.setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
-    root_dir = lspconfig.util.root_pattern("package.json", ".git"),
   },
 })

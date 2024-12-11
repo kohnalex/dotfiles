@@ -55,7 +55,6 @@ lazy.setup({
   "williamboman/mason.nvim", -- LSP Server manager
   "williamboman/mason-lspconfig.nvim", -- Mason-lspconfig helper
   "neovim/nvim-lspconfig", -- LSP Configuration
-  "jose-elias-alvarez/typescript.nvim", -- Better TypeScript integration
   "onsails/lspkind.nvim", -- Lsp icons
   "jose-elias-alvarez/null-ls.nvim", -- formatting, linting, ...
   "jayp0521/mason-null-ls.nvim", -- Mason-Null-ls helper
@@ -72,6 +71,6 @@ lazy.setup({
 
   -- Fuzzy finder
   "nvim-telescope/telescope-ui-select.nvim", -- telescope fancy ui select
-  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }, -- use fzf as fuzzyfinder engine 
+  { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- use fzf as fuzzyfinder engine
   { "nvim-telescope/telescope.nvim", branch = "0.1.x" }, -- actual fuzzy finder
 })
