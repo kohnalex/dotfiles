@@ -7,9 +7,9 @@
                 
 
 if status is-interactive
+    # Set Homebrew path environment
     if test -d /opt/homebrew/bin
-	  # set homebrew path environment
-	  eval (/opt/homebrew/bin/brew shellenv)
+        eval (/opt/homebrew/bin/brew shellenv)
     end
     if test -d /home/linuxbrew/.linuxbrew/bin
         eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -17,24 +17,38 @@ if status is-interactive
 end
 
 ###
-### STANDARD STUFF
+### STANDARD SETTINGS
 ###
 set fish_greeting
-# set theme_color_scheme terminal-dark
 set theme_color_scheme terminal
 
 ###
-### ADD PATH
+### NVM SETUP
 ###
-if test -d (brew --prefix nvm)
-    bass source (brew --prefix nvm)/nvm.sh
+# Add nvm path to fish_user_paths
+if test -d ~/.local/share/nvm
+    # Ensure the correct NVM directory is in the path
+    set -g fish_user_paths ~/.local/share/nvm/current/bin $fish_user_paths
 end
 
-# TODO: do better solution
+# Automatically use LTS version of Node with nvm
+if type -q nvm
+    nvm use lts &>/dev/null
+end
+
+###
+### JAVA SETUP
+###
 if test -d /usr/libexec/java_home
     set -x JAVA_HOME (/usr/libexec/java_home -v 11)
 end
+if test -d /usr/local/opt/openjdk@11/bin
+    fish_add_path /usr/local/opt/openjdk@11/bin
+end
 
+###
+### JETBRAINS PATH
+###
 if test -d /Users/alex/.local/bin/JetBrains
     fish_add_path /Users/alex/.local/bin/JetBrains
 end
@@ -43,23 +57,15 @@ if test -d ~/Library/Jetbrains/bin
     fish_add_path ~/Library/Jetbrains/bin
 end
 
-# if test -d opt/homebrew/opt/node@14/bin
-# fish_add_path /opt/homebrew/opt/node@14/bin
-# end
 
-# JAVA
-if test -d /usr/local/opt/openjdk@11/bin
-    fish_add_path usr/local/opt/openjdk@11/bin
-end
 ###
-### ALIASES & CUSTOM FUNCTIONS
+### ALIASES AND CUSTOM FUNCTIONS
 ###
 
-### VIM
 if type -q nvim
-	alias vim=(which nvim)
-	alias vi=(which nvim)
-	set -Ux EDITOR (which nvim)
+    alias vim=(which nvim)
+    alias vi=(which nvim)
+    set -Ux EDITOR (which nvim)
 end
 if type -q neovide
 	alias vide=(which neovide)
@@ -97,7 +103,7 @@ abbr ipy "idf.py"
 
 ### LAZYGIT
 if type -q lazygit
-  abbr lg "lazygit"
+    abbr lg "lazygit"
 end
 
 ### TMUX
@@ -153,8 +159,7 @@ if type -q fzf
 end
 
 if type -q zoxide
-### MISC
-zoxide init fish | source
+    zoxide init fish | source
 end
 
 abbr f "z"
